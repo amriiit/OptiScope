@@ -1,0 +1,21 @@
+{
+  "name": "optiscope",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "engine:build": "make engine",
+    "build": "make engine && npm run build --workspace frontend",
+    "dev": "concurrently --kill-others -n api,web -c cyan,magenta \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "start": "npm run start --workspace backend",
+    "test": "make engine && node --test tests/*.test.mjs",
+    "sandbox:build": "docker build -f engine/Dockerfile -t optiscope-sandbox:local .",
+    "test:runtime": "make engine && REQUIRE_DOCKER=1 node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
