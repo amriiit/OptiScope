@@ -42,6 +42,7 @@ export function useAnalysisController() {
   }
   function changeFrontend(value) {
     setFrontend(value);
+    setError("");
     setResult(null);
     setSelectedId(null);
   }
@@ -75,11 +76,18 @@ export function useAnalysisController() {
   }
 
   async function loadSample() {
+    return loadExample(sample);
+  }
+  async function loadExample(name, corpus = false, mode) {
     setBusy("sample");
     setError("");
     try {
-      const data = await api.getSample(sample);
+      const data = await (corpus
+        ? api.getCorpusSample(name)
+        : api.getSample(name));
       load(data.source, data.fileName);
+      if (mode) setFrontend(mode);
+      return true;
     } catch (e) {
       setError(e.message);
     } finally {
@@ -95,6 +103,7 @@ export function useAnalysisController() {
       );
       setResult(data);
       setSelectedId(data.hotspots?.[0]?.id || data.regions?.[0]?.id || null);
+      return data;
     } catch (e) {
       setError(`Request failed: ${e.message}`);
     } finally {
@@ -124,6 +133,7 @@ export function useAnalysisController() {
     checkHealth,
     openFile,
     loadSample,
+    loadExample,
     run,
     setError,
   };

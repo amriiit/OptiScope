@@ -16,6 +16,7 @@
     "test:runtime": "make engine && REQUIRE_DOCKER=1 node --test tests/*.test.mjs"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "jsdom": "^26.1.0"
   }
 }

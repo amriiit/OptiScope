@@ -1,7 +1,7 @@
-import { useComparisonController } from "../../controllers/useComparisonController.js";
+import { useWorkspace } from "../../controllers/WorkspaceContext.jsx";
 export default function Comparison() {
   const { files, result, error, busy, selectFile, compare } =
-    useComparisonController();
+    useWorkspace().comparison;
   return (
     <section
       className="panel comparison-panel"

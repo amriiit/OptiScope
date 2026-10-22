@@ -39,3 +39,7 @@ export function compareSources(original, optimized) {
   body.append("optimized", optimized);
   return request("/api/compare", { method: "POST", body });
 }
+
+export const getCorpus = () => request("/api/corpus");
+export const getCorpusSample = (name) =>
+  request(`/api/corpus/${encodeURIComponent(name)}`);

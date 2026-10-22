@@ -38,10 +38,9 @@ export default function SourceViewer({ source, fileName, selected }) {
       ) : (
         <div className="empty tall">
           <Code2 size={34} />
-          <h3>Your source, under the microscope</h3>
+          <h3>No source loaded</h3>
           <p>
-            Upload C++ or load a sample to inspect its structure and measure
-            where time is spent.
+            Upload a .cpp file or open a sample.
           </p>
         </div>
       )}

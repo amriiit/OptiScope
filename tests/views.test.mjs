@@ -19,13 +19,15 @@ before(async () => {
     ProgramOutput: "components/ProgramOutput",
     RecommendationPanel: "components/RecommendationPanel",
     Comparison: "pages/Comparison",
-    Dashboard: "pages/Dashboard",
+    Workbench: "test-workbench",
   };
   await build({
     entryPoints: Object.fromEntries(
       Object.entries(entries).map(([name, p]) => [
         name,
-        `frontend/src/views/${p}.jsx`,
+        p === "test-workbench"
+          ? "tests/helpers/workbench.jsx"
+          : `frontend/src/views/${p}.jsx`,
       ]),
     ),
     outdir: dir,
@@ -48,21 +50,44 @@ after(async () => {
 const render = (name, props = {}) =>
   renderToStaticMarkup(React.createElement(views[name], props));
 const noop = () => {};
-test("workbench initial view exposes real actions, comparison inputs and unavailable timing placeholders", () => {
-  const html = render("Dashboard");
-  for (const text of [
-    "Find the code",
-    "worth optimizing.",
-    "Analyze",
-    "Run Profiling",
-    "Performance comparison",
-    "EXECUTION ONLY",
-    "Original C++ program",
-    "Manually optimized C++ program",
-  ])
-    assert.ok(html.includes(text), text);
-  assert.ok(html.includes('disabled=""'));
-  assert.ok(!html.includes("820 ms"));
+test("routes expose distinct pages, real actions, and honest empty states", () => {
+  const expected = {
+    "/": [
+      "Less guessing.",
+      "More insight.",
+      "Begin analysis",
+      "ILLUSTRATIVE SOURCE",
+    ],
+    "/analyze": [
+      "Analyze source",
+      "Run Profiling",
+      "Compiler frontend",
+      "Upload C++ file",
+    ],
+    "/results": ["Analysis results", "No analysis yet"],
+    "/ast": ["Program structure", "No structure to explore yet"],
+    "/samples": ["Sample library", "Sample category"],
+    "/about": ["Inside OptiScope", "Know the boundaries", "Native macOS"],
+    "/compare": [
+      "Performance comparison",
+      "EXECUTION ONLY",
+      "Original C++ program",
+      "Manually optimized C++ program",
+    ],
+    "/missing": ["Page not found"],
+  };
+  for (const [path, texts] of Object.entries(expected)) {
+    const html = render("Workbench", { path });
+    for (const text of texts)
+      assert.ok(html.includes(text), `${path}: ${text}`);
+    assert.match(html, /aria-label="Main navigation"/);
+    assert.ok(!html.includes("820 ms"));
+  }
+  assert.ok(
+    !render("Workbench", { path: "/analyze" }).includes(
+      "Performance comparison",
+    ),
+  );
 });
 test("upload view has labeled input, sample selection and disabled processing controls", () => {
   const html = render("UploadPanel", {
@@ -105,15 +130,15 @@ test("recommendation view renders actual AST rule evidence, caveats and region s
     assert.ok(html.includes(`${rec.regionId} · L${rec.startLine}`));
   }
 });
-test("monochrome tokens define responsive and reduced-motion rules without remote fonts or gradients", async () => {
+test("reference-inspired light and blue tokens include accessibility and responsive rules", async () => {
   const css = await readFile("frontend/src/index.css", "utf8");
   for (const value of [
-    "#0b0b0b",
-    "#141414",
-    "#181818",
-    "#343434",
-    "#f5f5f5",
-    "#a6a6a6",
+    "#f0f0ec",
+    "#ffffff",
+    "#0078d7",
+    "#182434",
+    "#b8bfca",
+    "#bc1425",
   ])
     assert.ok(css.includes(value));
   assert.match(css, /prefers-reduced-motion/);

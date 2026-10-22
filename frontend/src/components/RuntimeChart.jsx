@@ -39,10 +39,10 @@ export default function RuntimeChart({ result, onSelect }) {
                 layout="vertical"
                 margin={{ left: 0, right: 30, top: 10, bottom: 10 }}
               >
-                <CartesianGrid stroke="#343434" horizontal={false} />
+                <CartesianGrid stroke="#dce3eb" horizontal={false} />
                 <XAxis
                   type="number"
-                  tick={{ fill: "#a6a6a6", fontSize: 11 }}
+                  tick={{ fill: "#566273", fontSize: 11 }}
                   tickFormatter={(n) => n.toFixed(2)}
                   axisLine={false}
                   tickLine={false}
@@ -51,20 +51,21 @@ export default function RuntimeChart({ result, onSelect }) {
                   dataKey="name"
                   type="category"
                   width={40}
-                  tick={{ fill: "#dedede", fontSize: 12 }}
+                  tick={{ fill: "#344356", fontSize: 12 }}
                   axisLine={false}
                   tickLine={false}
                 />
                 <Tooltip
-                  cursor={{ fill: "#ffffff06" }}
+                  cursor={{ fill: "#e9f3ff" }}
                   contentStyle={{
-                    background: "#181818",
-                    border: "1px solid #484848",
-                    borderRadius: 8,
+                    background: "#ffffff",
+                    border: "1px solid #b8bfca",
+                    borderRadius: 2,
                   }}
                   formatter={(v) => [ms(v), "Exclusive time"]}
                 />
                 <Bar
+                  isAnimationActive={false}
                   dataKey="exclusiveMs"
                   radius={[0, 4, 4, 0]}
                   maxBarSize={30}
@@ -72,7 +73,7 @@ export default function RuntimeChart({ result, onSelect }) {
                   style={{ cursor: "pointer" }}
                 >
                   {data.map((r, i) => (
-                    <Cell key={r.name} fill={i === 0 ? "#95d5b2" : "#b5b5b5"} />
+                    <Cell key={r.name} fill={i === 0 ? "#0078d7" : "#86b5df"} />
                   ))}
                 </Bar>
               </BarChart>
