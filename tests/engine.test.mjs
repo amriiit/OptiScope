@@ -76,3 +76,11 @@ test('scoped symbol table resolves parameters and local scopes; no main remains 
   assert.equal(r.success, true); assert.equal(r.hasMain, false); assert.ok(!r.warnings.some(x => /Duplicate|Unresolved/.test(x)));
   assert.ok(analyze('int f(){return missing;}').warnings.some(x => /Unresolved/.test(x)));
 });
+test('added cubic and independently authored mixed-family fixtures are parsed from content', () => {
+  const triple = analyze(source('triple'));
+  assert.equal(triple.summary.worstEstimatedComplexity, 'O(n^3)');
+  assert.equal(triple.summary.maxNestingDepth, 3);
+  const independent = analyze(source('independent'));
+  assert.equal(independent.summary.worstEstimatedComplexity, 'O(log width * width)');
+  assert.equal(independent.regions.length, 2);
+});

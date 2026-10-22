@@ -1,5 +1,10 @@
 node_modules/
-frontend/dist/
-engine/build/
+.env
+.env.*
+!.env.example
+dist/
+build/
 .DS_Store
 *.log
+*.o
+*.exe

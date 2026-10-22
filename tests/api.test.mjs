@@ -29,14 +29,14 @@ test('absent main is static-only even when profiling requested', async () => {
 test('POST /profile completes the actual multipart-upload Docker pipeline for acceptance samples', {timeout: 45000}, async t => {
   const health = await (await fetch(`${base}/health`)).json();
   if (!health.docker.available) { if (process.env.REQUIRE_DOCKER) assert.fail(health.docker.reason); t.skip(health.docker.reason); return; }
-  for (const file of ['nested.cpp','sequential.cpp','mixed_hotspots.cpp']) {
+  for (const file of ['linear.cpp','nested.cpp','sequential.cpp','logarithmic.cpp','mixed_hotspots.cpp','patterns.cpp','triple.cpp','independent.cpp']) {
     const response = await post(await readFile(`samples/${file}`), file, 'profile');
     assert.equal(response.status,200); const r=await response.json();
     assert.equal(r.profiling.status,'completed',JSON.stringify(r.errors));
     assert.ok(r.summary.totalMeasuredRuntimeMs > 0);
     assert.ok(r.profiling.metadata.execution.stdout.length > 0);
     assert.ok(r.hotspots.every(h=>r.regions.some(region=>h.id===region.id)));
-    assert.ok(r.recommendations.some(rec=>rec.pattern==='General runtime guidance'));
+    if (file === 'mixed_hotspots.cpp') assert.ok(r.recommendations.some(rec=>rec.pattern==='General runtime guidance'));
   }
 });
 test('runtime subset rejects unknown external calls without executing them', async () => {

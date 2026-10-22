@@ -1,0 +1,113 @@
+
+> optiscope@1.0.0 test:runtime
+> make engine && REQUIRE_DOCKER=1 node --test tests/*.test.mjs
+
+make: Nothing to be done for `engine'.
+✔ API analyzes actual uploaded file with complete contract and no fabricated times (212.27875ms)
+✔ API serves real samples and rejects traversal, wrong extension, oversized and invalid uploads (980.532833ms)
+✔ absent main is static-only even when profiling requested (41.51425ms)
+✔ POST /profile completes the actual multipart-upload Docker pipeline for acceptance samples (7005.995875ms)
+✔ runtime subset rejects unknown external calls without executing them (21.449417ms)
+✔ benchmark statistics compute even/odd medians, mean, spread without mutating input (2.992708ms)
+✔ benchmark ratios are gated and correctly represent regressions (0.150167ms)
+✔ benchmark warns about short durations and noisy observations (0.087625ms)
+✔ real Docker comparison validates demo output with 10 uninstrumented runs and metadata (1609.261667ms)
+✔ real Docker rejects changed output and suppresses improvement claims (565.850417ms)
+✔ real Docker comparison reports compile errors, nonzero exits and timeout (3891.916542ms)
+✔ comparison HTTP upload contract and equivalence are real (483.565542ms)
+✔ C++17 corpus arrays: semantic parse, mapped regions, real compilation and behavior (2209.09975ms)
+✔ C++17 corpus sort_search: semantic parse, mapped regions, real compilation and behavior (1834.866042ms)
+✔ C++17 corpus strings_two_pointers: semantic parse, mapped regions, real compilation and behavior (1676.690209ms)
+✔ C++17 corpus linked_list: semantic parse, mapped regions, real compilation and behavior (1159.162625ms)
+✔ C++17 corpus stacks_queues: semantic parse, mapped regions, real compilation and behavior (1007.730625ms)
+✔ C++17 corpus trees_bst: semantic parse, mapped regions, real compilation and behavior (906.873583ms)
+✔ C++17 corpus graphs: semantic parse, mapped regions, real compilation and behavior (1078.518875ms)
+✔ C++17 corpus disjoint_sets: semantic parse, mapped regions, real compilation and behavior (818.395542ms)
+✔ C++17 corpus dynamic_programming: semantic parse, mapped regions, real compilation and behavior (831.131583ms)
+✔ C++17 corpus backtracking: semantic parse, mapped regions, real compilation and behavior (794.852667ms)
+✔ C++17 corpus modern_cpp: semantic parse, mapped regions, real compilation and behavior (1181.517667ms)
+✔ Clang structural inference: fixed (310.839042ms)
+✔ Clang structural inference: linear (261.687125ms)
+✔ Clang structural inference: independent sizes (237.548375ms)
+✔ Clang structural inference: cubic (262.896ms)
+✔ Clang structural inference: sequential product bound (250.313041ms)
+✔ Clang structural inference: logarithmic (264.241542ms)
+✔ Clang structural inference: n log n (250.999542ms)
+✔ Clang structural inference: triangular upper envelope (233.152333ms)
+✔ Clang separates valid recursion, graph and memoization syntax from unknown algorithm cost (1556.803958ms)
+✔ STL registry models iterator categories, sorting and mutation worst cases conservatively (403.1885ms)
+✔ unknown calls, mutated induction and container growth do not receive invented exact costs (808.44325ms)
+✔ structured Clang diagnostics distinguish invalid C++, missing headers and source locations (686.437ms)
+✔ macro, constexpr and goto boundaries stay visible but are excluded from unsafe rewrites (627.399792ms)
+✔ RAII survives early return, break, continue and caught exceptions in modern functions (824.949875ms)
+✔ mandatory 18-benchmark workspace stress program parses/profiles and retains deterministic results (1794.08025ms)
+✔ Clang static analysis cannot access host paths or execute uploaded code (938.901875ms)
+✔ modern runtime failures remain explicit and multithreaded profiling is rejected (6884.428791ms)
+✔ frontend selection keeps legacy API behavior and exposes Clang findings over multipart HTTP (822.047334ms)
+✔ global constructors are outside the main-time denominator and cannot contaminate records (780.876958ms)
+✔ library models abstain for custom algorithms, comparators, fake container names and allocating callbacks (324.989333ms)
+✔ oversized modern allocations fail inside the unchanged memory-limited sandbox (726.503709ms)
+✔ recurrence inference solves only a guarded scalar n-1 recurrence and abstains on branching recursion (271.127334ms)
+✔ Clang byte ranges and stable IDs survive UTF-8, shared-end unbraced loops and dangling else (1006.817792ms)
+✔ explicit scalar references and possible container aliases suppress unsafe loop estimates (795.473334ms)
+✔ all sample ASTs, structural estimates, region ranges and stable IDs (142.94525ms)
+✔ Flex tokens and typed AST: calls, arrays, booleans, unary, compound assignment, if/else and while (8.355625ms)
+✔ reject unsupported syntax, macros, keywords and malformed constructs (29.680542ms)
+✔ complexity: fixed bounds, constant steps, mutation, dependent bounds, unknown calls and conditional loops (81.165417ms)
+✔ source byte offsets respect UTF-8 comments; nested and shared-end edits are ordered right to left (7.809958ms)
+✔ deterministic AST recommendation evidence and conservative suppression (15.937042ms)
+✔ scoped symbol table resolves parameters and local scopes; no main remains static-only (16.3775ms)
+✔ added cubic and independently authored mixed-family fixtures are parsed from content (37.898208ms)
+✔ frontend API client loads and analyzes all eight real samples over HTTP (2339.190708ms)
+✔ region model rejects ambiguous IDs and invalid original-source spans (0.249084ms)
+✔ comparison frontend rejects successful envelopes without evidence (0.069541ms)
+✔ analysis envelopes allocate independent mutable collections (0.838042ms)
+✔ upload model validates UTF-8 and strips supplied path (0.533666ms)
+✔ upload model rejects NUL and empty source (0.128958ms)
+✔ frontend source model validates actual file bytes and extension (1.066625ms)
+✔ frontend source model enforces 128 KiB bound (0.997625ms)
+✔ profile model accepts nested inclusive durations without summing them (0.261875ms)
+✔ profile model rejects duplicate (0.079375ms)
+✔ profile model rejects foreign ID (0.040667ms)
+✔ profile model rejects exclusive exceeds inclusive (0.053958ms)
+✔ profile model rejects unsafe integer (0.085875ms)
+✔ profile model rejects zero invocations (0.048ms)
+✔ profile model rejects malformed total (0.035083ms)
+✔ hotspots use main denominator, exclusive rank and unexecuted absence (0.163709ms)
+✔ hotspot service rejects sum of exclusive times over main duration (0.074959ms)
+✔ two-slot job limiter releases capacity after rejected work (0.11925ms)
+✔ workspaces isolate input and clean all files (13.113375ms)
+✔ process infrastructure bounds trusted subprocess duration (77.333625ms)
+✔ process infrastructure bounds output and never interprets shell characters (95.548625ms)
+✔ frontend analysis model preserves actual data and unavailable measurements (0.209917ms)
+✔ local and enclosing complexity reuse real AST estimates; sequential siblings remain O(n) (237.474542ms)
+✔ invocation display uses only profiler records and distinguishes unavailable/unexecuted from counts (14.935667ms)
+✔ AST opens program/function/body branches, retains source lines and marks selected loop (97.556167ms)
+✔ source highlight still uses selected region lines (7.352084ms)
+linear.cpp: linear: 38398852 | main 2.020 ms; top R1
+nested.cpp: nested: 69103152 | main 4.260 ms; top R2
+sequential.cpp: sequential: 58098494 | main 3.946 ms; top R1
+logarithmic.cpp: logarithmic: 3048567 | main 0.017 ms; top R1
+mixed_hotspots.cpp: mixed: 325379525 | main 13.714 ms; top R5
+patterns.cpp: patterns: 2610 | main 0.108 ms; top R3
+triple.cpp: triple: 109915 | main 0.134 ms; top R3
+independent.cpp: independent: 196632 | main 0.251 ms; top R1
+✔ all sample programs really compile/run; baseline stdout matches instrumented stdout and runtime invariants (8998.67775ms)
+✔ nested unbraced loops, dangling else and early returns retain observable semantics (1200.871708ms)
+✔ compile errors, runtime failure, timeouts, output caps, and unexecuted regions are honest (7428.92425ms)
+✔ missing Docker or image preserves static data without measurements (0.26725ms)
+✔ real missing-image failure retains static results without any runtime fabrication (182.145209ms)
+✔ concurrent real profiling jobs preserve independent outputs and region records (645.460542ms)
+✔ workbench initial view exposes real actions, comparison inputs and unavailable timing placeholders (757.044291ms)
+✔ upload view has labeled input, sample selection and disabled processing controls (10.449917ms)
+✔ output view preserves actual exit code, stdout and stderr with HTML escaping (0.448416ms)
+✔ recommendation view renders actual AST rule evidence, caveats and region source links (24.544625ms)
+✔ monochrome tokens define responsive and reduced-motion rules without remote fonts or gradients (57.972375ms)
+ℹ tests 92
+ℹ suites 0
+ℹ pass 92
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 35705.826166
