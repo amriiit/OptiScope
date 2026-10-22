@@ -20,70 +20,70 @@
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 31.625541
+        "elapsedMs": 13.170208
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 27.892875
+        "elapsedMs": 14.164125
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.707542
+        "elapsedMs": 14.689125
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 13.209792
+        "elapsedMs": 16.249042
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 15.86675
+        "elapsedMs": 13.731334
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 20.881875
+        "elapsedMs": 20.17375
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.338875
+        "elapsedMs": 14.706083
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 13.3245
+        "elapsedMs": 15.566583
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.005833
+        "elapsedMs": 12.002333
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 15.153833
+        "elapsedMs": 14.441917
       }
     ],
     "optimized": [
@@ -92,70 +92,70 @@
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 2.531541
+        "elapsedMs": 1.675416
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 2.1345
+        "elapsedMs": 1.022416
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 9.02675
+        "elapsedMs": 0.626959
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 2.345709
+        "elapsedMs": 0.609709
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.446875
+        "elapsedMs": 1.625166
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.830584
+        "elapsedMs": 0.811959
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.535542
+        "elapsedMs": 1.373875
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.002375
+        "elapsedMs": 0.740125
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 4.328042
+        "elapsedMs": 1.0055
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.160041
+        "elapsedMs": 1.869084
       }
     ]
   },
@@ -165,14 +165,14 @@
       "exitCode": 0,
       "stdout": "hits: 33600\n",
       "stderr": "",
-      "elapsedMs": 29.282583
+      "elapsedMs": 11.492084
     },
     "optimized": {
       "status": "completed",
       "exitCode": 0,
       "stdout": "hits: 33600\n",
       "stderr": "",
-      "elapsedMs": 4.519958
+      "elapsedMs": 0.443917
     }
   },
   "environment": {
@@ -191,48 +191,48 @@
   "workload": "Fixed internal inputs; no stdin; same container limits; single-threaded deterministic programs only.",
   "equivalent": true,
   "status": "completed",
-  "speedup": 7.53108256975136,
-  "runtimeReductionPercent": 86.72169650593786,
+  "speedup": 14.36501413273528,
+  "runtimeReductionPercent": 93.03864242137304,
   "statistics": {
     "original": {
       "timingsMs": [
-        31.625541,
-        27.892875,
-        14.707542,
-        13.209792,
-        15.86675,
-        20.881875,
-        14.338875,
-        13.3245,
-        14.005833,
-        15.153833
+        13.170208,
+        14.164125,
+        14.689125,
+        16.249042,
+        13.731334,
+        20.17375,
+        14.706083,
+        15.566583,
+        12.002333,
+        14.441917
       ],
       "runCount": 10,
-      "meanMs": 18.1007416,
-      "medianMs": 14.930687500000001,
-      "minMs": 13.209792,
-      "maxMs": 31.625541,
-      "standardDeviationMs": 6.240058967535133
+      "meanMs": 14.88945,
+      "medianMs": 14.565521,
+      "minMs": 12.002333,
+      "maxMs": 20.17375,
+      "standardDeviationMs": 2.0895796705531464
     },
     "optimized": {
       "timingsMs": [
-        2.531541,
-        2.1345,
-        9.02675,
-        2.345709,
-        1.446875,
-        1.830584,
-        1.535542,
-        1.002375,
-        4.328042,
-        1.160041
+        1.675416,
+        1.022416,
+        0.626959,
+        0.609709,
+        1.625166,
+        0.811959,
+        1.373875,
+        0.740125,
+        1.0055,
+        1.869084
       ],
       "runCount": 10,
-      "meanMs": 2.7341959,
-      "medianMs": 1.982542,
-      "minMs": 1.002375,
-      "maxMs": 9.02675,
-      "standardDeviationMs": 2.2820135135579043
+      "meanMs": 1.1360209000000001,
+      "medianMs": 1.0139580000000001,
+      "minMs": 0.609709,
+      "maxMs": 1.869084,
+      "standardDeviationMs": 0.4418150943153595
     }
   },
   "analysisMode": "execution_only",
@@ -245,7 +245,7 @@
   "metadata": {
     "image": "optiscope-sandbox:local",
     "imageId": "sha256:e14b8f80d8bfe7e5d30bcabc5cc6f8477af3731a8a9b5a3c44c3e1d7dad77f3c",
-    "timestamp": "2026-10-22T18:34:04.328Z",
+    "timestamp": "2026-10-22T18:52:18.379Z",
     "files": {
       "original": {
         "fileName": "original.cpp",

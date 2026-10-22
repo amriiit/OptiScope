@@ -87,3 +87,9 @@ Primary specification references: [C++17 sorting requirements](https://timsong-c
 The normalized tree is analysis-oriented, not a complete visual replica of Clang's AST: namespace/class wrappers and global declaration inventories are not rendered as full compiler nodes. Source methods/constructors/functions and their analyzable bodies are retained, while unknown semantics remain visible as opaque nodes or operation coverage.
 
 For Clang-derived recommendations, `Analysis::recommend` now abstains on opaque/lambda effects, pointer-based state, reference writes and unproved mutating calls. This prevents the legacy direct-write heuristic from falsely labeling swap/alias-mutated arithmetic invariant.
+
+## Multi-page route and state flow
+
+`App.jsx` wraps the route tree in one `WorkspaceProvider`. Its analysis/comparison hooks remain mounted when `SiteLayout` changes outlets. Home links into Analyze, where `UploadPanel` and `AnalysisActions` use the shared controller. Successful analysis/profile actions open Results only while Analyze is still active; navigating away permits background completion without a surprise redirect. Results and Structure read the same source, result and selected region/diagnostic. Comparison reads the persistent comparison controller.
+
+`Samples.jsx` fetches corpus metadata through `apiClient.getCorpus`. `loadExample` reads either an academic sample or an allowlisted corpus source through the API, clears stale results and selects the fixture's frontend before opening Analyze. No sample launch executes source automatically. Local state in the library owns category filtering; workspace state owns loaded source and results.

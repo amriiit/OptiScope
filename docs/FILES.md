@@ -2,7 +2,9 @@
 
 Generated dependencies, parser build output and frontend production bundles are excluded. Existing five locked specifications and six original samples are preserved. `.gitignore` was already user-modified and was not changed by this refactor. The initial `routes/api.js` working edit was retained behaviorally while its code moved into focused MVC modules.
 
-## Final folder structure
+The structure below records the MVC/C++17 baseline; the final section lists the multi-page redesign additions. README contains the current high-level structure.
+
+## Baseline folder structure
 
 ```text
 .dockerignore
@@ -283,3 +285,16 @@ Modified integration: Makefile and Dockerfile; AST semantic metadata/shared cost
 The exact workspace stress source is copied unchanged. The original six samples, original eight-item sample menu, lexer and grammar, comparison feature and all five locked SOT files are preserved. Existing `.gitignore` changes predate this task and remain untouched. No remote branch, merge or push was performed.
 
 New evidence is under `docs/evidence/cpp17-*` with text build/test logs, canonical golden hashes and full measured stress output. No generated parser source is added to version control. Prior uncommitted MVC work remains part of the current local branch.
+
+## Multi-page redesign additions (23 October 2026)
+
+- `frontend/src/App.jsx`: route tree and root provider; `views/layouts/SiteLayout.jsx`: navigation and page shell.
+- `controllers/WorkspaceContext.jsx`: persistent analysis/comparison controller state across navigation.
+- `views/pages/{Home,Analyze,Results,Structure,Samples,About}.jsx`: focused pages; Comparison remains separate; Dashboard is a compatibility alias to Analyze.
+- `views/components/{PageHeading,EmptyWorkspace,WorkspaceStatus}.jsx`: shared route UI.
+- `index.css`, `main.jsx`: light blue retro theme and locally bundled Silkscreen font.
+- `SampleService`, `SampleController`, `sampleRoutes`, `apiClient`: additive allowlisted corpus loading.
+- `tests/navigation.test.mjs`, `tests/helpers/workbench.jsx`, `tests/views.test.mjs`: real HTTP source/routes, DOM persistence and updated design acceptance checks.
+- README, API, architecture, demo, UI, limitations, status and validation documents: updated workflow and honest QA boundaries.
+
+The compiler engine and Docker isolation implementation have no changes in this redesign relative to safety checkpoint `9a34332`.

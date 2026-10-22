@@ -70,3 +70,9 @@ Clang parsing uses the same non-root, network-none, read-only Docker/resource bo
 macOS development uses the Linux Clang container, avoiding unconfined host header access and Homebrew library ABI coupling. The native academic compiler and React production build are verified on macOS. A direct native macOS LibTooling binary is not verified because its development libraries are absent. Docker installs compatible Clang/LLVM 14 packages; exact image IDs and logs are recorded in validation evidence.
 
 Official implementation references: [Clang LibTooling](https://clang.llvm.org/docs/LibTooling.html) and [RecursiveASTVisitor](https://clang.llvm.org/doxygen/classclang_1_1RecursiveASTVisitor.html). No new frontend dependency was introduced.
+
+## Multi-page frontend update
+
+The single Dashboard workflow has been split into `views/pages/{Home,Analyze,Results,Structure,Samples,About,Comparison}.jsx`. `AppRoutes` defines React Router paths under `views/layouts/SiteLayout.jsx`. `controllers/WorkspaceContext.jsx` mounts both existing controller hooks once above route changes; views access the shared analysis/comparison state without duplicating HTTP logic. The previous Dashboard import remains an Analyze alias. State is tab-local and clears on reload.
+
+The sample service adds a separate, explicit DSA corpus allowlist. New `/api/corpus` routes expose existing fixture metadata/source only; `/api/samples` and all analyze/profile/compare contracts retain their behavior. No compiler or sandbox changes are part of the UI redesign.

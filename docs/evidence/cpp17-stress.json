@@ -17,7 +17,7 @@
     "loopsDetected": 35,
     "maxNestingDepth": 3,
     "rangeForLoops": 4,
-    "totalMeasuredRuntimeMs": 14.569958,
+    "totalMeasuredRuntimeMs": 14.476791,
     "whileLoops": 0,
     "worstEstimatedComplexity": "Unknown"
   },
@@ -11429,12 +11429,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 4708,
-        "exclusiveNs": 4708,
+        "inclusiveNs": 4167,
+        "exclusiveNs": 4167,
         "calls": 1,
-        "inclusiveMs": 0.004708,
-        "exclusiveMs": 0.004708,
-        "programRuntimePercent": 0.032313065006776276,
+        "inclusiveMs": 0.004167,
+        "exclusiveMs": 0.004167,
+        "programRuntimePercent": 0.028784003305704974,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11461,12 +11461,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 9208,
-        "exclusiveNs": 9208,
+        "inclusiveNs": 459,
+        "exclusiveNs": 459,
         "calls": 1,
-        "inclusiveMs": 0.009208,
-        "exclusiveMs": 0.009208,
-        "programRuntimePercent": 0.06319853495802802,
+        "inclusiveMs": 0.000459,
+        "exclusiveMs": 0.000459,
+        "programRuntimePercent": 0.0031705921567839173,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11493,12 +11493,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 46167,
-        "exclusiveNs": 9251,
+        "inclusiveNs": 41792,
+        "exclusiveNs": 8416,
         "calls": 1,
-        "inclusiveMs": 0.046167,
-        "exclusiveMs": 0.009251,
-        "programRuntimePercent": 0.06349366278200665,
+        "inclusiveMs": 0.041792,
+        "exclusiveMs": 0.008416,
+        "programRuntimePercent": 0.05813443048255653,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11525,12 +11525,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 36916,
-        "exclusiveNs": 36916,
+        "inclusiveNs": 33376,
+        "exclusiveNs": 33376,
         "calls": 120,
-        "inclusiveMs": 0.036916,
-        "exclusiveMs": 0.036916,
-        "programRuntimePercent": 0.25337066860453544,
+        "inclusiveMs": 0.033376,
+        "exclusiveMs": 0.033376,
+        "programRuntimePercent": 0.23054833077302836,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11557,12 +11557,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 6585167,
-        "exclusiveNs": 11247,
+        "inclusiveNs": 6474875,
+        "exclusiveNs": 11375,
         "calls": 1,
-        "inclusiveMs": 6.585167,
-        "exclusiveMs": 0.011247,
-        "programRuntimePercent": 0.07719308456482853,
+        "inclusiveMs": 6.474875,
+        "exclusiveMs": 0.011375,
+        "programRuntimePercent": 0.07857404310112648,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11589,12 +11589,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 6573920,
-        "exclusiveNs": 1126389,
+        "inclusiveNs": 6463500,
+        "exclusiveNs": 1124783,
         "calls": 120,
-        "inclusiveMs": 6.57392,
-        "exclusiveMs": 1.126389,
-        "programRuntimePercent": 7.730900802871223,
+        "inclusiveMs": 6.4635,
+        "exclusiveMs": 1.124783,
+        "programRuntimePercent": 7.769560256827636,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -11621,12 +11621,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 5447531,
-        "exclusiveNs": 5447531,
+        "inclusiveNs": 5338717,
+        "exclusiveNs": 5338717,
         "calls": 14400,
-        "inclusiveMs": 5.447531,
-        "exclusiveMs": 5.447531,
-        "programRuntimePercent": 37.38879000200275,
+        "inclusiveMs": 5.338717,
+        "exclusiveMs": 5.338717,
+        "programRuntimePercent": 36.877765245073995,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -11653,12 +11653,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 27792,
-        "exclusiveNs": 10046,
+        "inclusiveNs": 28042,
+        "exclusiveNs": 9797,
         "calls": 1,
-        "inclusiveMs": 0.027792,
-        "exclusiveMs": 0.010046,
-        "programRuntimePercent": 0.06895009580672778,
+        "inclusiveMs": 0.028042,
+        "exclusiveMs": 0.009797,
+        "programRuntimePercent": 0.06767383738564714,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11681,12 +11681,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 17746,
-        "exclusiveNs": 17746,
+        "inclusiveNs": 18245,
+        "exclusiveNs": 18245,
         "calls": 120,
-        "inclusiveMs": 0.017746,
-        "exclusiveMs": 0.017746,
-        "programRuntimePercent": 0.121798566612203,
+        "inclusiveMs": 0.018245,
+        "exclusiveMs": 0.018245,
+        "programRuntimePercent": 0.12602931133011452,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11713,12 +11713,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 29708,
-        "exclusiveNs": 10329,
+        "inclusiveNs": 32458,
+        "exclusiveNs": 11335,
         "calls": 1,
-        "inclusiveMs": 0.029708,
-        "exclusiveMs": 0.010329,
-        "programRuntimePercent": 0.07089244869477318,
+        "inclusiveMs": 0.032458,
+        "exclusiveMs": 0.011335,
+        "programRuntimePercent": 0.07829773877373791,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11745,12 +11745,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 19379,
-        "exclusiveNs": 19379,
+        "inclusiveNs": 21123,
+        "exclusiveNs": 21123,
         "calls": 120,
-        "inclusiveMs": 0.019379,
-        "exclusiveMs": 0.019379,
-        "programRuntimePercent": 0.13300656048562393,
+        "inclusiveMs": 0.021123,
+        "exclusiveMs": 0.021123,
+        "programRuntimePercent": 0.1459094076857226,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11777,12 +11777,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 429417,
-        "exclusiveNs": 429417,
+        "inclusiveNs": 439292,
+        "exclusiveNs": 439292,
         "calls": 1,
-        "inclusiveMs": 0.429417,
-        "exclusiveMs": 0.429417,
-        "programRuntimePercent": 2.9472768555681492,
+        "inclusiveMs": 0.439292,
+        "exclusiveMs": 0.439292,
+        "programRuntimePercent": 3.0344570146795653,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -11809,12 +11809,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3862084,
-        "exclusiveNs": 14042,
+        "inclusiveNs": 3879417,
+        "exclusiveNs": 14083,
         "calls": 1,
-        "inclusiveMs": 3.862084,
-        "exclusiveMs": 0.014042,
-        "programRuntimePercent": 0.09637639312343933,
+        "inclusiveMs": 3.879417,
+        "exclusiveMs": 0.014083,
+        "programRuntimePercent": 0.09727984606533312,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11841,12 +11841,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3848042,
-        "exclusiveNs": 1303355,
+        "inclusiveNs": 3865334,
+        "exclusiveNs": 1313181,
         "calls": 120,
-        "inclusiveMs": 3.848042,
-        "exclusiveMs": 1.303355,
-        "programRuntimePercent": 8.945495930736383,
+        "inclusiveMs": 3.865334,
+        "exclusiveMs": 1.313181,
+        "programRuntimePercent": 9.070939823611463,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -11873,12 +11873,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 2544687,
-        "exclusiveNs": 2544687,
+        "inclusiveNs": 2552153,
+        "exclusiveNs": 2552153,
         "calls": 14400,
-        "inclusiveMs": 2.544687,
-        "exclusiveMs": 2.544687,
-        "programRuntimePercent": 17.465300860853546,
+        "inclusiveMs": 2.552153,
+        "exclusiveMs": 2.552153,
+        "programRuntimePercent": 17.62927295144345,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -11905,12 +11905,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 27334,
-        "exclusiveNs": 12504,
+        "inclusiveNs": 27500,
+        "exclusiveNs": 12083,
         "calls": 1,
-        "inclusiveMs": 0.027334,
-        "exclusiveMs": 0.012504,
-        "programRuntimePercent": 0.08582042583787819,
+        "inclusiveMs": 0.0275,
+        "exclusiveMs": 0.012083,
+        "programRuntimePercent": 0.08346462969590429,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11937,12 +11937,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 14830,
-        "exclusiveNs": 14830,
+        "inclusiveNs": 15417,
+        "exclusiveNs": 15417,
         "calls": 120,
-        "inclusiveMs": 0.01483,
-        "exclusiveMs": 0.01483,
-        "programRuntimePercent": 0.10178478208379185,
+        "inclusiveMs": 0.015417,
+        "exclusiveMs": 0.015417,
+        "programRuntimePercent": 0.10649459538374217,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11969,12 +11969,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 48916,
-        "exclusiveNs": 11913,
+        "inclusiveNs": 51125,
+        "exclusiveNs": 12089,
         "calls": 1,
-        "inclusiveMs": 0.048916,
-        "exclusiveMs": 0.011913,
-        "programRuntimePercent": 0.0817641341176138,
+        "inclusiveMs": 0.051125,
+        "exclusiveMs": 0.012089,
+        "programRuntimePercent": 0.08350607534501257,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -11997,12 +11997,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 37003,
-        "exclusiveNs": 37003,
+        "inclusiveNs": 39036,
+        "exclusiveNs": 39036,
         "calls": 120,
-        "inclusiveMs": 0.037003,
-        "exclusiveMs": 0.037003,
-        "programRuntimePercent": 0.2539677876902596,
+        "inclusiveMs": 0.039036,
+        "exclusiveMs": 0.039036,
+        "programRuntimePercent": 0.26964539309851193,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12029,12 +12029,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3057292,
-        "exclusiveNs": 10378,
+        "inclusiveNs": 3057917,
+        "exclusiveNs": 10711,
         "calls": 1,
-        "inclusiveMs": 3.057292,
-        "exclusiveMs": 0.010378,
-        "programRuntimePercent": 0.07122875714535347,
+        "inclusiveMs": 3.057917,
+        "exclusiveMs": 0.010711,
+        "programRuntimePercent": 0.0739873912664761,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12061,12 +12061,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3046914,
-        "exclusiveNs": 591535,
+        "inclusiveNs": 3047206,
+        "exclusiveNs": 594203,
         "calls": 80,
-        "inclusiveMs": 3.046914,
-        "exclusiveMs": 0.591535,
-        "programRuntimePercent": 4.0599636594697115,
+        "inclusiveMs": 3.047206,
+        "exclusiveMs": 0.594203,
+        "programRuntimePercent": 4.10452150618186,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12093,12 +12093,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 2455379,
-        "exclusiveNs": 2455379,
+        "inclusiveNs": 2453003,
+        "exclusiveNs": 2453003,
         "calls": 6400,
-        "inclusiveMs": 2.455379,
-        "exclusiveMs": 2.455379,
-        "programRuntimePercent": 16.852340960763236,
+        "inclusiveMs": 2.453003,
+        "exclusiveMs": 2.453003,
+        "programRuntimePercent": 16.944383599929015,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -12130,7 +12130,7 @@
         "calls": 1,
         "inclusiveMs": 0.000084,
         "exclusiveMs": 0.000084,
-        "programRuntimePercent": 0.0005765287724233659,
+        "programRuntimePercent": 0.0005802390875160109,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12157,12 +12157,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 16333,
-        "exclusiveNs": 11916,
+        "inclusiveNs": 17958,
+        "exclusiveNs": 12613,
         "calls": 1,
-        "inclusiveMs": 0.016333,
-        "exclusiveMs": 0.011916,
-        "programRuntimePercent": 0.08178472443091463,
+        "inclusiveMs": 0.017958,
+        "exclusiveMs": 0.012613,
+        "programRuntimePercent": 0.08712566203380294,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12189,12 +12189,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 4417,
-        "exclusiveNs": 4417,
+        "inclusiveNs": 5345,
+        "exclusiveNs": 5345,
         "calls": 120,
-        "inclusiveMs": 0.004417,
-        "exclusiveMs": 0.004417,
-        "programRuntimePercent": 0.030315804616595325,
+        "inclusiveMs": 0.005345,
+        "exclusiveMs": 0.005345,
+        "programRuntimePercent": 0.036921165747298555,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12217,12 +12217,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 146375,
-        "exclusiveNs": 16502,
+        "inclusiveNs": 156000,
+        "exclusiveNs": 16752,
         "calls": 1,
-        "inclusiveMs": 0.146375,
-        "exclusiveMs": 0.016502,
-        "programRuntimePercent": 0.11326045003012364,
+        "inclusiveMs": 0.156,
+        "exclusiveMs": 0.016752,
+        "programRuntimePercent": 0.1157162523103359,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12249,12 +12249,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 129873,
-        "exclusiveNs": 129873,
+        "inclusiveNs": 139248,
+        "exclusiveNs": 139248,
         "calls": 120,
-        "inclusiveMs": 0.129873,
-        "exclusiveMs": 0.129873,
-        "programRuntimePercent": 0.8913752531064263,
+        "inclusiveMs": 0.139248,
+        "exclusiveMs": 0.139248,
+        "programRuntimePercent": 0.961870624505113,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12281,12 +12281,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 45167,
-        "exclusiveNs": 11671,
+        "inclusiveNs": 44750,
+        "exclusiveNs": 11286,
         "calls": 1,
-        "inclusiveMs": 0.045167,
-        "exclusiveMs": 0.011671,
-        "programRuntimePercent": 0.08010318217801314,
+        "inclusiveMs": 0.04475,
+        "exclusiveMs": 0.011286,
+        "programRuntimePercent": 0.0779592659726869,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12313,12 +12313,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 33496,
-        "exclusiveNs": 33496,
+        "inclusiveNs": 33464,
+        "exclusiveNs": 33464,
         "calls": 120,
-        "inclusiveMs": 0.033496,
-        "exclusiveMs": 0.033496,
-        "programRuntimePercent": 0.2298977114415841,
+        "inclusiveMs": 0.033464,
+        "exclusiveMs": 0.033464,
+        "programRuntimePercent": 0.23115620029328324,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12345,12 +12345,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 43417,
-        "exclusiveNs": 11705,
+        "inclusiveNs": 43458,
+        "exclusiveNs": 11457,
         "calls": 1,
-        "inclusiveMs": 0.043417,
-        "exclusiveMs": 0.011705,
-        "programRuntimePercent": 0.08033653906208926,
+        "inclusiveMs": 0.043458,
+        "exclusiveMs": 0.011457,
+        "programRuntimePercent": 0.07914046697227307,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12377,12 +12377,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 31712,
-        "exclusiveNs": 31712,
+        "inclusiveNs": 32001,
+        "exclusiveNs": 32001,
         "calls": 120,
-        "inclusiveMs": 0.031712,
-        "exclusiveMs": 0.031712,
-        "programRuntimePercent": 0.2176533384653545,
+        "inclusiveMs": 0.032001,
+        "exclusiveMs": 0.032001,
+        "programRuntimePercent": 0.22105036951904602,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12405,12 +12405,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 18750,
-        "exclusiveNs": 18750,
+        "inclusiveNs": 16000,
+        "exclusiveNs": 16000,
         "calls": 1,
-        "inclusiveMs": 0.01875,
-        "exclusiveMs": 0.01875,
-        "programRuntimePercent": 0.12868945813021562,
+        "inclusiveMs": 0.016,
+        "exclusiveMs": 0.016,
+        "programRuntimePercent": 0.11052173095543066,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12433,12 +12433,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 4292,
-        "exclusiveNs": 4292,
+        "inclusiveNs": 4209,
+        "exclusiveNs": 4209,
         "calls": 1,
-        "inclusiveMs": 0.004292,
-        "exclusiveMs": 0.004292,
-        "programRuntimePercent": 0.02945787489572722,
+        "inclusiveMs": 0.004209,
+        "exclusiveMs": 0.004209,
+        "programRuntimePercent": 0.02907412284946298,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12463,12 +12463,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 625,
-        "exclusiveNs": 625,
+        "inclusiveNs": 667,
+        "exclusiveNs": 667,
         "calls": 1,
-        "inclusiveMs": 0.000625,
-        "exclusiveMs": 0.000625,
-        "programRuntimePercent": 0.00428964860434052,
+        "inclusiveMs": 0.000667,
+        "exclusiveMs": 0.000667,
+        "programRuntimePercent": 0.004607374659204516,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12491,12 +12491,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 18625,
-        "exclusiveNs": 18625,
+        "inclusiveNs": 19209,
+        "exclusiveNs": 19209,
         "calls": 1,
-        "inclusiveMs": 0.018625,
-        "exclusiveMs": 0.018625,
-        "programRuntimePercent": 0.1278315284093475,
+        "inclusiveMs": 0.019209,
+        "exclusiveMs": 0.019209,
+        "programRuntimePercent": 0.13268824562017922,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12525,12 +12525,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 5447531,
-        "exclusiveNs": 5447531,
+        "inclusiveNs": 5338717,
+        "exclusiveNs": 5338717,
         "calls": 14400,
-        "inclusiveMs": 5.447531,
-        "exclusiveMs": 5.447531,
-        "programRuntimePercent": 37.38879000200275,
+        "inclusiveMs": 5.338717,
+        "exclusiveMs": 5.338717,
+        "programRuntimePercent": 36.877765245073995,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -12557,12 +12557,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 2544687,
-        "exclusiveNs": 2544687,
+        "inclusiveNs": 2552153,
+        "exclusiveNs": 2552153,
         "calls": 14400,
-        "inclusiveMs": 2.544687,
-        "exclusiveMs": 2.544687,
-        "programRuntimePercent": 17.465300860853546,
+        "inclusiveMs": 2.552153,
+        "exclusiveMs": 2.552153,
+        "programRuntimePercent": 17.62927295144345,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -12589,12 +12589,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 2455379,
-        "exclusiveNs": 2455379,
+        "inclusiveNs": 2453003,
+        "exclusiveNs": 2453003,
         "calls": 6400,
-        "inclusiveMs": 2.455379,
-        "exclusiveMs": 2.455379,
-        "programRuntimePercent": 16.852340960763236,
+        "inclusiveMs": 2.453003,
+        "exclusiveMs": 2.453003,
+        "programRuntimePercent": 16.944383599929015,
         "lowConfidence": true,
         "confidenceReason": "Mean exclusive time below 1 µs per invocation"
       },
@@ -12621,12 +12621,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3848042,
-        "exclusiveNs": 1303355,
+        "inclusiveNs": 3865334,
+        "exclusiveNs": 1313181,
         "calls": 120,
-        "inclusiveMs": 3.848042,
-        "exclusiveMs": 1.303355,
-        "programRuntimePercent": 8.945495930736383,
+        "inclusiveMs": 3.865334,
+        "exclusiveMs": 1.313181,
+        "programRuntimePercent": 9.070939823611463,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12653,12 +12653,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 6573920,
-        "exclusiveNs": 1126389,
+        "inclusiveNs": 6463500,
+        "exclusiveNs": 1124783,
         "calls": 120,
-        "inclusiveMs": 6.57392,
-        "exclusiveMs": 1.126389,
-        "programRuntimePercent": 7.730900802871223,
+        "inclusiveMs": 6.4635,
+        "exclusiveMs": 1.124783,
+        "programRuntimePercent": 7.769560256827636,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12685,12 +12685,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3046914,
-        "exclusiveNs": 591535,
+        "inclusiveNs": 3047206,
+        "exclusiveNs": 594203,
         "calls": 80,
-        "inclusiveMs": 3.046914,
-        "exclusiveMs": 0.591535,
-        "programRuntimePercent": 4.0599636594697115,
+        "inclusiveMs": 3.047206,
+        "exclusiveMs": 0.594203,
+        "programRuntimePercent": 4.10452150618186,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12717,12 +12717,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 429417,
-        "exclusiveNs": 429417,
+        "inclusiveNs": 439292,
+        "exclusiveNs": 439292,
         "calls": 1,
-        "inclusiveMs": 0.429417,
-        "exclusiveMs": 0.429417,
-        "programRuntimePercent": 2.9472768555681492,
+        "inclusiveMs": 0.439292,
+        "exclusiveMs": 0.439292,
+        "programRuntimePercent": 3.0344570146795653,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12749,12 +12749,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 129873,
-        "exclusiveNs": 129873,
+        "inclusiveNs": 139248,
+        "exclusiveNs": 139248,
         "calls": 120,
-        "inclusiveMs": 0.129873,
-        "exclusiveMs": 0.129873,
-        "programRuntimePercent": 0.8913752531064263,
+        "inclusiveMs": 0.139248,
+        "exclusiveMs": 0.139248,
+        "programRuntimePercent": 0.961870624505113,
         "lowConfidence": false,
         "confidenceReason": null
       },
@@ -12777,50 +12777,18 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 37003,
-        "exclusiveNs": 37003,
+        "inclusiveNs": 39036,
+        "exclusiveNs": 39036,
         "calls": 120,
-        "inclusiveMs": 0.037003,
-        "exclusiveMs": 0.037003,
-        "programRuntimePercent": 0.2539677876902596,
+        "inclusiveMs": 0.039036,
+        "exclusiveMs": 0.039036,
+        "programRuntimePercent": 0.26964539309851193,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Cannot establish a safe canonical progression, independent bound, and known body effects. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 117,
       "startOffset": 2742,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "exact_pattern",
-      "endLine": 33,
-      "endOffset": 744,
-      "estimatedComplexity": "O(n)",
-      "functionName": "redundantNestedSum(const vector<int> &)",
-      "id": "R4",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 36916,
-        "exclusiveNs": 36916,
-        "calls": 120,
-        "inclusiveMs": 0.036916,
-        "exclusiveMs": 0.036916,
-        "programRuntimePercent": 0.25337066860453544,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 31,
-      "startOffset": 672,
       "type": "ForStmt"
     },
     {
@@ -12841,18 +12809,50 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 33496,
-        "exclusiveNs": 33496,
+        "inclusiveNs": 33464,
+        "exclusiveNs": 33464,
         "calls": 120,
-        "inclusiveMs": 0.033496,
-        "exclusiveMs": 0.033496,
-        "programRuntimePercent": 0.2298977114415841,
+        "inclusiveMs": 0.033464,
+        "exclusiveMs": 0.033464,
+        "programRuntimePercent": 0.23115620029328324,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 174,
       "startOffset": 4125,
+      "type": "ForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "exact_pattern",
+      "endLine": 33,
+      "endOffset": 744,
+      "estimatedComplexity": "O(n)",
+      "functionName": "redundantNestedSum(const vector<int> &)",
+      "id": "R4",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 33376,
+        "exclusiveNs": 33376,
+        "calls": 120,
+        "inclusiveMs": 0.033376,
+        "exclusiveMs": 0.033376,
+        "programRuntimePercent": 0.23054833077302836,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 31,
+      "startOffset": 672,
       "type": "ForStmt"
     },
     {
@@ -12873,12 +12873,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 31712,
-        "exclusiveNs": 31712,
+        "inclusiveNs": 32001,
+        "exclusiveNs": 32001,
         "calls": 120,
-        "inclusiveMs": 0.031712,
-        "exclusiveMs": 0.031712,
-        "programRuntimePercent": 0.2176533384653545,
+        "inclusiveMs": 0.032001,
+        "exclusiveMs": 0.032001,
+        "programRuntimePercent": 0.22105036951904602,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12905,12 +12905,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 19379,
-        "exclusiveNs": 19379,
+        "inclusiveNs": 21123,
+        "exclusiveNs": 21123,
         "calls": 120,
-        "inclusiveMs": 0.019379,
-        "exclusiveMs": 0.019379,
-        "programRuntimePercent": 0.13300656048562393,
+        "inclusiveMs": 0.021123,
+        "exclusiveMs": 0.021123,
+        "programRuntimePercent": 0.1459094076857226,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12918,34 +12918,6 @@
       "startLine": 66,
       "startOffset": 1533,
       "type": "ForStmt"
-    },
-    {
-      "assumptions": [],
-      "complexityConfidence": "unknown",
-      "endLine": 199,
-      "endOffset": 4715,
-      "estimatedComplexity": "Unknown",
-      "functionName": "optimizedFrequencyCount(const vector<int> &)",
-      "id": "R32",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 18750,
-        "exclusiveNs": 18750,
-        "calls": 1,
-        "inclusiveMs": 0.01875,
-        "exclusiveMs": 0.01875,
-        "programRuntimePercent": 0.12868945813021562,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Range size, element binding or mutation effects are not established. Body cost: O(freq.size); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 197,
-      "startOffset": 4674,
-      "type": "RangeForStmt"
     },
     {
       "assumptions": [],
@@ -12961,12 +12933,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 18625,
-        "exclusiveNs": 18625,
+        "inclusiveNs": 19209,
+        "exclusiveNs": 19209,
         "calls": 1,
-        "inclusiveMs": 0.018625,
-        "exclusiveMs": 0.018625,
-        "programRuntimePercent": 0.1278315284093475,
+        "inclusiveMs": 0.019209,
+        "exclusiveMs": 0.019209,
+        "programRuntimePercent": 0.13268824562017922,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -12989,12 +12961,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 17746,
-        "exclusiveNs": 17746,
+        "inclusiveNs": 18245,
+        "exclusiveNs": 18245,
         "calls": 120,
-        "inclusiveMs": 0.017746,
-        "exclusiveMs": 0.017746,
-        "programRuntimePercent": 0.121798566612203,
+        "inclusiveMs": 0.018245,
+        "exclusiveMs": 0.018245,
+        "programRuntimePercent": 0.12602931133011452,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13017,12 +12989,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 146375,
-        "exclusiveNs": 16502,
+        "inclusiveNs": 156000,
+        "exclusiveNs": 16752,
         "calls": 1,
-        "inclusiveMs": 0.146375,
-        "exclusiveMs": 0.016502,
-        "programRuntimePercent": 0.11326045003012364,
+        "inclusiveMs": 0.156,
+        "exclusiveMs": 0.016752,
+        "programRuntimePercent": 0.1157162523103359,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13030,6 +13002,34 @@
       "startLine": 160,
       "startOffset": 3778,
       "type": "ForStmt"
+    },
+    {
+      "assumptions": [],
+      "complexityConfidence": "unknown",
+      "endLine": 199,
+      "endOffset": 4715,
+      "estimatedComplexity": "Unknown",
+      "functionName": "optimizedFrequencyCount(const vector<int> &)",
+      "id": "R32",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 16000,
+        "exclusiveNs": 16000,
+        "calls": 1,
+        "inclusiveMs": 0.016,
+        "exclusiveMs": 0.016,
+        "programRuntimePercent": 0.11052173095543066,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Range size, element binding or mutation effects are not established. Body cost: O(freq.size); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 197,
+      "startOffset": 4674,
+      "type": "RangeForStmt"
     },
     {
       "assumptions": [
@@ -13049,12 +13049,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 14830,
-        "exclusiveNs": 14830,
+        "inclusiveNs": 15417,
+        "exclusiveNs": 15417,
         "calls": 120,
-        "inclusiveMs": 0.01483,
-        "exclusiveMs": 0.01483,
-        "programRuntimePercent": 0.10178478208379185,
+        "inclusiveMs": 0.015417,
+        "exclusiveMs": 0.015417,
+        "programRuntimePercent": 0.10649459538374217,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13081,50 +13081,18 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 3862084,
-        "exclusiveNs": 14042,
+        "inclusiveNs": 3879417,
+        "exclusiveNs": 14083,
         "calls": 1,
-        "inclusiveMs": 3.862084,
-        "exclusiveMs": 0.014042,
-        "programRuntimePercent": 0.09637639312343933,
+        "inclusiveMs": 3.879417,
+        "exclusiveMs": 0.014083,
+        "programRuntimePercent": 0.09727984606533312,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n^2); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 90,
       "startOffset": 2076,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "exact_pattern",
-      "endLine": 110,
-      "endOffset": 2590,
-      "estimatedComplexity": "O(n^2)",
-      "functionName": "inefficientPrefixSum(const vector<int> &)",
-      "id": "R16",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 27334,
-        "exclusiveNs": 12504,
-        "calls": 1,
-        "inclusiveMs": 0.027334,
-        "exclusiveMs": 0.012504,
-        "programRuntimePercent": 0.08582042583787819,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 104,
-      "startOffset": 2440,
       "type": "ForStmt"
     },
     {
@@ -13145,12 +13113,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 16333,
-        "exclusiveNs": 11916,
+        "inclusiveNs": 17958,
+        "exclusiveNs": 12613,
         "calls": 1,
-        "inclusiveMs": 0.016333,
-        "exclusiveMs": 0.011916,
-        "programRuntimePercent": 0.08178472443091463,
+        "inclusiveMs": 0.017958,
+        "exclusiveMs": 0.012613,
+        "programRuntimePercent": 0.08712566203380294,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13177,18 +13145,50 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 48916,
-        "exclusiveNs": 11913,
+        "inclusiveNs": 51125,
+        "exclusiveNs": 12089,
         "calls": 1,
-        "inclusiveMs": 0.048916,
-        "exclusiveMs": 0.011913,
-        "programRuntimePercent": 0.0817641341176138,
+        "inclusiveMs": 0.051125,
+        "exclusiveMs": 0.012089,
+        "programRuntimePercent": 0.08350607534501257,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: Unknown; nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 116,
       "startOffset": 2711,
+      "type": "ForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "exact_pattern",
+      "endLine": 110,
+      "endOffset": 2590,
+      "estimatedComplexity": "O(n^2)",
+      "functionName": "inefficientPrefixSum(const vector<int> &)",
+      "id": "R16",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 27500,
+        "exclusiveNs": 12083,
+        "calls": 1,
+        "inclusiveMs": 0.0275,
+        "exclusiveMs": 0.012083,
+        "programRuntimePercent": 0.08346462969590429,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 104,
+      "startOffset": 2440,
       "type": "ForStmt"
     },
     {
@@ -13209,50 +13209,18 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 43417,
-        "exclusiveNs": 11705,
+        "inclusiveNs": 43458,
+        "exclusiveNs": 11457,
         "calls": 1,
-        "inclusiveMs": 0.043417,
-        "exclusiveMs": 0.011705,
-        "programRuntimePercent": 0.08033653906208926,
+        "inclusiveMs": 0.043458,
+        "exclusiveMs": 0.011457,
+        "programRuntimePercent": 0.07914046697227307,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 184,
       "startOffset": 4358,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "exact_pattern",
-      "endLine": 178,
-      "endOffset": 4224,
-      "estimatedComplexity": "O(n^2)",
-      "functionName": "unnecessaryRecomputation(const vector<int> &)",
-      "id": "R28",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 45167,
-        "exclusiveNs": 11671,
-        "calls": 1,
-        "inclusiveMs": 0.045167,
-        "exclusiveMs": 0.011671,
-        "programRuntimePercent": 0.08010318217801314,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 172,
-      "startOffset": 4067,
       "type": "ForStmt"
     },
     {
@@ -13273,50 +13241,18 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 6585167,
-        "exclusiveNs": 11247,
+        "inclusiveNs": 6474875,
+        "exclusiveNs": 11375,
         "calls": 1,
-        "inclusiveMs": 6.585167,
-        "exclusiveMs": 0.011247,
-        "programRuntimePercent": 0.07719308456482853,
+        "inclusiveMs": 6.474875,
+        "exclusiveMs": 0.011375,
+        "programRuntimePercent": 0.07857404310112648,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n^2); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 40,
       "startOffset": 882,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "exact_pattern",
-      "endLine": 138,
-      "endOffset": 3331,
-      "estimatedComplexity": "O(n^3)",
-      "functionName": "matrixMultiplication(int)",
-      "id": "R20",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 3057292,
-        "exclusiveNs": 10378,
-        "calls": 1,
-        "inclusiveMs": 3.057292,
-        "exclusiveMs": 0.010378,
-        "programRuntimePercent": 0.07122875714535347,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n^2); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 131,
-      "startOffset": 3140,
       "type": "ForStmt"
     },
     {
@@ -13337,18 +13273,82 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 29708,
-        "exclusiveNs": 10329,
+        "inclusiveNs": 32458,
+        "exclusiveNs": 11335,
         "calls": 1,
-        "inclusiveMs": 0.029708,
-        "exclusiveMs": 0.010329,
-        "programRuntimePercent": 0.07089244869477318,
+        "inclusiveMs": 0.032458,
+        "exclusiveMs": 0.011335,
+        "programRuntimePercent": 0.07829773877373791,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 64,
       "startOffset": 1470,
+      "type": "ForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "exact_pattern",
+      "endLine": 178,
+      "endOffset": 4224,
+      "estimatedComplexity": "O(n^2)",
+      "functionName": "unnecessaryRecomputation(const vector<int> &)",
+      "id": "R28",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 44750,
+        "exclusiveNs": 11286,
+        "calls": 1,
+        "inclusiveMs": 0.04475,
+        "exclusiveMs": 0.011286,
+        "programRuntimePercent": 0.0779592659726869,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 172,
+      "startOffset": 4067,
+      "type": "ForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "exact_pattern",
+      "endLine": 138,
+      "endOffset": 3331,
+      "estimatedComplexity": "O(n^3)",
+      "functionName": "matrixMultiplication(int)",
+      "id": "R20",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 3057917,
+        "exclusiveNs": 10711,
+        "calls": 1,
+        "inclusiveMs": 3.057917,
+        "exclusiveMs": 0.010711,
+        "programRuntimePercent": 0.0739873912664761,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n^2); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 131,
+      "startOffset": 3140,
       "type": "ForStmt"
     },
     {
@@ -13369,12 +13369,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 27792,
-        "exclusiveNs": 10046,
+        "inclusiveNs": 28042,
+        "exclusiveNs": 9797,
         "calls": 1,
-        "inclusiveMs": 0.027792,
-        "exclusiveMs": 0.010046,
-        "programRuntimePercent": 0.06895009580672778,
+        "inclusiveMs": 0.028042,
+        "exclusiveMs": 0.009797,
+        "programRuntimePercent": 0.06767383738564714,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13401,82 +13401,18 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 46167,
-        "exclusiveNs": 9251,
+        "inclusiveNs": 41792,
+        "exclusiveNs": 8416,
         "calls": 1,
-        "inclusiveMs": 0.046167,
-        "exclusiveMs": 0.009251,
-        "programRuntimePercent": 0.06349366278200665,
+        "inclusiveMs": 0.041792,
+        "exclusiveMs": 0.008416,
+        "programRuntimePercent": 0.05813443048255653,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
       "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(n); nested costs multiply, sequential costs use their dominant terms.",
       "startLine": 30,
       "startOffset": 641,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "estimated",
-      "endLine": 24,
-      "endOffset": 517,
-      "estimatedComplexity": "O(arr.size)",
-      "functionName": "linearSum(const vector<int> &)",
-      "id": "R2",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 9208,
-        "exclusiveNs": 9208,
-        "calls": 1,
-        "inclusiveMs": 0.009208,
-        "exclusiveMs": 0.009208,
-        "programRuntimePercent": 0.06319853495802802,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Monotone iteration toward a stable standard-container size. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 22,
-      "startOffset": 454,
-      "type": "ForStmt"
-    },
-    {
-      "assumptions": [
-        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
-        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
-        "Conservative structural estimate; early returns and branches may reduce actual work."
-      ],
-      "complexityConfidence": "estimated",
-      "endLine": 17,
-      "endOffset": 364,
-      "estimatedComplexity": "O(arr.size * n)",
-      "functionName": "generateData(int)",
-      "id": "R1",
-      "instrumentation": {
-        "reason": "",
-        "supported": true
-      },
-      "measurement": {
-        "status": "measured",
-        "inclusiveNs": 4708,
-        "exclusiveNs": 4708,
-        "calls": 1,
-        "inclusiveMs": 0.004708,
-        "exclusiveMs": 0.004708,
-        "programRuntimePercent": 0.032313065006776276,
-        "lowConfidence": true,
-        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
-      },
-      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(arr.size); nested costs multiply, sequential costs use their dominant terms.",
-      "startLine": 15,
-      "startOffset": 297,
       "type": "ForStmt"
     },
     {
@@ -13497,12 +13433,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 4417,
-        "exclusiveNs": 4417,
+        "inclusiveNs": 5345,
+        "exclusiveNs": 5345,
         "calls": 120,
-        "inclusiveMs": 0.004417,
-        "exclusiveMs": 0.004417,
-        "programRuntimePercent": 0.030315804616595325,
+        "inclusiveMs": 0.005345,
+        "exclusiveMs": 0.005345,
+        "programRuntimePercent": 0.036921165747298555,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13525,12 +13461,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 4292,
-        "exclusiveNs": 4292,
+        "inclusiveNs": 4209,
+        "exclusiveNs": 4209,
         "calls": 1,
-        "inclusiveMs": 0.004292,
-        "exclusiveMs": 0.004292,
-        "programRuntimePercent": 0.02945787489572722,
+        "inclusiveMs": 0.004209,
+        "exclusiveMs": 0.004209,
+        "programRuntimePercent": 0.02907412284946298,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13538,6 +13474,38 @@
       "startLine": 201,
       "startOffset": 4744,
       "type": "RangeForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "estimated",
+      "endLine": 17,
+      "endOffset": 364,
+      "estimatedComplexity": "O(arr.size * n)",
+      "functionName": "generateData(int)",
+      "id": "R1",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 4167,
+        "exclusiveNs": 4167,
+        "calls": 1,
+        "inclusiveMs": 0.004167,
+        "exclusiveMs": 0.004167,
+        "programRuntimePercent": 0.028784003305704974,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Constant start, named upper bound, and constant nonzero step. Body cost: O(arr.size); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 15,
+      "startOffset": 297,
+      "type": "ForStmt"
     },
     {
       "assumptions": [
@@ -13555,12 +13523,12 @@
       },
       "measurement": {
         "status": "measured",
-        "inclusiveNs": 625,
-        "exclusiveNs": 625,
+        "inclusiveNs": 667,
+        "exclusiveNs": 667,
         "calls": 1,
-        "inclusiveMs": 0.000625,
-        "exclusiveMs": 0.000625,
-        "programRuntimePercent": 0.00428964860434052,
+        "inclusiveMs": 0.000667,
+        "exclusiveMs": 0.000667,
+        "programRuntimePercent": 0.004607374659204516,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13568,6 +13536,38 @@
       "startLine": 209,
       "startOffset": 4920,
       "type": "RangeForStmt"
+    },
+    {
+      "assumptions": [
+        "Named size bounds are treated as independent nonnegative input parameters, even when demo code initializes them with literals.",
+        "Arithmetic does not overflow; loop body does not mutate the bound or induction variable; single-threaded execution.",
+        "Conservative structural estimate; early returns and branches may reduce actual work."
+      ],
+      "complexityConfidence": "estimated",
+      "endLine": 24,
+      "endOffset": 517,
+      "estimatedComplexity": "O(arr.size)",
+      "functionName": "linearSum(const vector<int> &)",
+      "id": "R2",
+      "instrumentation": {
+        "reason": "",
+        "supported": true
+      },
+      "measurement": {
+        "status": "measured",
+        "inclusiveNs": 459,
+        "exclusiveNs": 459,
+        "calls": 1,
+        "inclusiveMs": 0.000459,
+        "exclusiveMs": 0.000459,
+        "programRuntimePercent": 0.0031705921567839173,
+        "lowConfidence": true,
+        "confidenceReason": "Aggregate exclusive time below 0.1 ms"
+      },
+      "reasoning": "Monotone iteration toward a stable standard-container size. Body cost: O(1); nested costs multiply, sequential costs use their dominant terms.",
+      "startLine": 22,
+      "startOffset": 454,
+      "type": "ForStmt"
     },
     {
       "assumptions": [
@@ -13592,7 +13592,7 @@
         "calls": 1,
         "inclusiveMs": 0.000084,
         "exclusiveMs": 0.000084,
-        "programRuntimePercent": 0.0005765287724233659,
+        "programRuntimePercent": 0.0005802390875160109,
         "lowConfidence": true,
         "confidenceReason": "Aggregate exclusive time below 0.1 ms"
       },
@@ -13653,17 +13653,17 @@
       "execution": {
         "status": "completed",
         "exitCode": 0,
-        "stdout": "======================================\nCOMPILER PERFORMANCE HOTSPOT TEST\n======================================\nInput Size: 120\n--------------------------------------\n1. Linear Sum O(n)\nResult: 55740\nExecution Time: 9 microseconds\n--------------------------------------\n2. Nested Sum O(n^2)\nResult: 115237\nExecution Time: 47 microseconds\n--------------------------------------\n3. Triple Nested O(n^3)\nResult: 8640003\nExecution Time: 6587 microseconds\n--------------------------------------\n4. Duplicate Search O(n^2)\nResult: 0\nExecution Time: 28 microseconds\n--------------------------------------\n5. Repeated Linear Search O(n^2)\nResult: 15\nExecution Time: 30 microseconds\n--------------------------------------\n6. Repeated Sorting O(n^2 log n)\nResult: 55740\nExecution Time: 430 microseconds\n--------------------------------------\n7. Loop Invariant Waste O(n^3)\nResult: 689915\nExecution Time: 3862 microseconds\n--------------------------------------\n8. Prefix Sum O(n^2)\nResult: 3309640\nExecution Time: 27 microseconds\n--------------------------------------\n9. Bubble Sort O(n^2)\nResult: 3300\nExecution Time: 49 microseconds\n--------------------------------------\n10. Matrix Multiplication O(n^3)\nResult: 3072000\nExecution Time: 3109 microseconds\n--------------------------------------\n11. Logarithmic Loop O(log n)\nResult: 127\nExecution Time: 0 microseconds\n--------------------------------------\n12. N Log N Loop O(n log n)\nResult: 5017\nExecution Time: 16 microseconds\n--------------------------------------\n13. Repeated Allocation O(n^2)\nResult: 55740\nExecution Time: 146 microseconds\n--------------------------------------\n14. Unnecessary Recomputation O(n^2)\nResult: 7200\nExecution Time: 45 microseconds\n--------------------------------------\n15. Frequency Count O(n^2)\nResult: 120\nExecution Time: 43 microseconds\n--------------------------------------\n16. Optimized Frequency O(n)\nResult: 120\nExecution Time: 25 microseconds\n--------------------------------------\n17. Optimized Prefix O(n)\nResult: 3309640\nExecution Time: 1 microseconds\n--------------------------------------\n18. Optimized Duplicate O(n)\nResult: 0\nExecution Time: 20 microseconds\n--------------------------------------\nFinal checksum: 10922060\nAll benchmarks completed.\n",
+        "stdout": "======================================\nCOMPILER PERFORMANCE HOTSPOT TEST\n======================================\nInput Size: 120\n--------------------------------------\n1. Linear Sum O(n)\nResult: 55740\nExecution Time: 1 microseconds\n--------------------------------------\n2. Nested Sum O(n^2)\nResult: 115237\nExecution Time: 42 microseconds\n--------------------------------------\n3. Triple Nested O(n^3)\nResult: 8640003\nExecution Time: 6475 microseconds\n--------------------------------------\n4. Duplicate Search O(n^2)\nResult: 0\nExecution Time: 28 microseconds\n--------------------------------------\n5. Repeated Linear Search O(n^2)\nResult: 15\nExecution Time: 32 microseconds\n--------------------------------------\n6. Repeated Sorting O(n^2 log n)\nResult: 55740\nExecution Time: 440 microseconds\n--------------------------------------\n7. Loop Invariant Waste O(n^3)\nResult: 689915\nExecution Time: 3879 microseconds\n--------------------------------------\n8. Prefix Sum O(n^2)\nResult: 3309640\nExecution Time: 27 microseconds\n--------------------------------------\n9. Bubble Sort O(n^2)\nResult: 3300\nExecution Time: 51 microseconds\n--------------------------------------\n10. Matrix Multiplication O(n^3)\nResult: 3072000\nExecution Time: 3095 microseconds\n--------------------------------------\n11. Logarithmic Loop O(log n)\nResult: 127\nExecution Time: 0 microseconds\n--------------------------------------\n12. N Log N Loop O(n log n)\nResult: 5017\nExecution Time: 18 microseconds\n--------------------------------------\n13. Repeated Allocation O(n^2)\nResult: 55740\nExecution Time: 156 microseconds\n--------------------------------------\n14. Unnecessary Recomputation O(n^2)\nResult: 7200\nExecution Time: 45 microseconds\n--------------------------------------\n15. Frequency Count O(n^2)\nResult: 120\nExecution Time: 43 microseconds\n--------------------------------------\n16. Optimized Frequency O(n)\nResult: 120\nExecution Time: 22 microseconds\n--------------------------------------\n17. Optimized Prefix O(n)\nResult: 3309640\nExecution Time: 1 microseconds\n--------------------------------------\n18. Optimized Duplicate O(n)\nResult: 0\nExecution Time: 21 microseconds\n--------------------------------------\nFinal checksum: 10922060\nAll benchmarks completed.\n",
         "stderr": ""
       },
       "timeoutSeconds": 5,
       "singleThreaded": true
     },
     "measuredTotals": {
-      "programRuntimeMs": 14.569958,
-      "programRuntimeNs": 14569958,
-      "regionExclusiveMs": 14.421461,
-      "uninstrumentedAndOverheadMs": 0.148497
+      "programRuntimeMs": 14.476791,
+      "programRuntimeNs": 14476791,
+      "regionExclusiveMs": 14.339379,
+      "uninstrumentedAndOverheadMs": 0.137412
     }
   },
   "diagnostics": [],

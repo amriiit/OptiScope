@@ -33,4 +33,6 @@ Parsing, complexity inference, safe instrumentation and runtime completion are s
 
 ## UI verification
 
-Browser visual/interactive QA is **NOT VERIFIED**. No connected browser provider was available and native Chrome access remained pending permissions in the prior task. This upgrade tests actual Clang HTTP/client bindings and server-rendered AST/coverage components, not live browser clicks, focus movement, hover or viewport geometry. The original design reference image remains unavailable. Complete the manual preflight in `UI_DESIGN_GUIDE.md` before a faculty presentation.
+The supplied Retro-OS UI Kit reference was inspected for the multi-page redesign. Browser visual/interactive QA is **NOT VERIFIED** because no browser provider was connected. Automated server-rendered route checks and DOM navigation tests cover page separation, real HTTP/sample/analysis bindings, source selection, retained profiling output and comparison files, and corpus launch. DOM chart geometry is supplied by the test harness and does not validate actual viewport layout, hover or visual focus. Complete the manual preflight in [UI_DESIGN_GUIDE.md](UI_DESIGN_GUIDE.md) before a presentation.
+
+Workspace state persists across route navigation within one tab. Refresh clears it; there is no durable storage or shared multi-tab workspace.

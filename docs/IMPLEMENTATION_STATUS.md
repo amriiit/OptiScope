@@ -1,6 +1,6 @@
 # Implementation status
 
-Updated 22 October 2026. SOT-1.0 remains locked and unchanged. Status applies to the stated tested slice, not automatic completion of a version's complete acceptance gates. See `VALIDATION.md` and `KNOWN_LIMITATIONS.md`.
+Updated 23 October 2026. SOT-1.0 remains locked and unchanged. Status applies to the stated tested slice, not automatic completion of a version's complete acceptance gates. See `VALIDATION.md` and `KNOWN_LIMITATIONS.md`.
 
 | Requirement / feature | Status | Evidence / boundary |
 |---|---|---|
@@ -22,7 +22,7 @@ Updated 22 October 2026. SOT-1.0 remains locked and unchanged. Status applies to
 | V2-F08 corpus and reproducible commands | IMPLEMENTED AND TESTED | Expanded suite exceeds 40 tests; no hosted CI workflow added |
 | V2-F09 explanatory presentation | IMPLEMENTED AND TESTED | Unavailable/unexecuted/measured data and model/component tests; live visual QA unverified |
 | MVC and modular C++ refactor | IMPLEMENTED AND TESTED | Layered modules, builds, unchanged six-sample JSON baseline, complete regressions |
-| Monochrome responsive presentation in browser | IMPLEMENTED BUT NOT VERIFIED | Design tokens and responsive CSS built/tested statically; no visual viewport/click QA |
+| Retro desktop multi-page presentation | IMPLEMENTED; VISUAL QA UNVERIFIED | Reference inspected; light/blue tokens, six primary routes + Compare, shared workspace state; automated DOM/HTTP interaction checks; no browser viewport QA |
 | V3-F01/F02/F04 two-file execution-only comparison | IMPLEMENTED AND TESTED | Real HTTP/Docker equivalent pair and mismatches; ratios suppressed on errors/mismatch |
 | V3-F03 fixed ten repeated runs | IMPLEMENTED AND TESTED | Actual -O2 raw timings, warm-ups, AB/BA order and statistics |
 | V3-F03 configurable counts / V3-T05 external input fixtures | NOT IMPLEMENTED | Fixed internal inputs only; workload semantics remain user's responsibility |
@@ -31,7 +31,7 @@ Updated 22 October 2026. SOT-1.0 remains locked and unchanged. Status applies to
 | V3-F07 / V3-T14 test-count target | IMPLEMENTED AND TESTED | 57 tests passed in the preceding MVC baseline suite; see final Docker-required record |
 | V3-F08 / V3-T10 report export | NOT IMPLEMENTED | Raw benchmark JSON is available in UI and repository evidence; no final HTML/PDF report |
 | V3-F09 walkthrough and demo preparation | IMPLEMENTED AND TESTED | Documentation paths/functions checked against current code; human presentation rehearsal unverified |
-| V3-F10 complete browser experience | IMPLEMENTED BUT NOT VERIFIED | Static component and HTTP validation only |
+| V3-F10 complete browser experience | IMPLEMENTED BUT NOT VISUALLY VERIFIED | SSR, DOM navigation and actual HTTP/Docker data binding verified; native browser/viewport QA remains unverified |
 
 The project is **not V3-complete**, and full locked V1/V2 completion is not claimed. The practical backend/compiler workflow passes its automated gates; faculty visual readiness remains conditional on the manual browser preflight in `PRACTICAL_DEMO_GUIDE.md`.
 

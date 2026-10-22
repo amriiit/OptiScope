@@ -139,3 +139,9 @@ Only safe regions are rewritten. After completed profiling, an excluded region h
 Clang's normalized AST retains existing node fields/children/source ranges and adds node kind names for range-for/do/switch/break/continue/throw/lambda/opaque constructs. Opaque means inference is unmodeled, not C++ parsing failed. Legacy native JSON remains byte-for-byte compatible at the parsed-object level for all eight baseline samples.
 
 The generated rewrite is bounded at 1 MiB. Exceeding that bound retains static findings and returns an explicit profiling-unsupported reason; no truncated source is compiled.
+
+## Corpus library (additive)
+
+- `GET /api/corpus` returns the 12 existing DSA fixtures as `{name,title,category,frontend}` entries.
+- `GET /api/corpus/:name` returns `{fileName,source}` for an exact allowlisted filename; unknown or traversal names return 404.
+- The original eight-item `/api/samples` response remains unchanged. Corpus loading does not parse or execute code.

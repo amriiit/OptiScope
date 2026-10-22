@@ -1,50 +1,41 @@
-# UI design guide
+# OptiScope UI design and verification
 
-## Reference and evidence
+## Reference and visual system
 
-No visual reference image was available. `design/reference.png` does not exist and the chat attachment contained text only. The implementation follows the explicit Phase 1.3 requirements; no claim of inspecting a portfolio image is made.
+The supplied Retro-OS UI Kit image was inspected before redesign. Its blue title bars, pale gray/white base, bitmap headings, small corner radii, and boxed controls inform an original OptiScope workspace. The image's gallery is not reproduced as the application layout.
 
-Browser visual QA is **NOT VERIFIED**. Attempted `iab` creation returned unavailable; browser inventory had no providers; native Chrome inspection waited on macOS Accessibility/Screen Recording permissions. Exact browser viewports and live interactions tested: **none**. The requested desktop/narrow/mobile acceptance remains a manual preflight.
+- Palette: page `#f0f0ec`, surfaces white / `#f6f6f2`, blue `#0078d7`, dark blue `#005ba4`, text `#182434`, muted text `#566273`, borders `#b8bfca`, red utility/error `#bc1425`.
+- Locally served Silkscreen for display headings; system sans for body; system monospace for source, metrics, and utility labels. No runtime font CDN request.
+- One-pixel panel/control borders, 2–3 px corners, minimal inset/window shadows. No large decorative shadows.
+- Links and buttons use short color transitions; routes enter with a small fade/translation. Reduced-motion preferences disable animation and transitions.
+- Visible keyboard focus, semantic navigation with active-page state, skip link, labeled uploads, disabled busy controls, status/alert announcements, and scrollable code/tables.
 
-## Design system
+## Page structure and shared state
 
-All tokens are defined once at the start of `frontend/src/index.css`:
+`AppRoutes` renders Home, Analyze, Results, AST, Samples, About, and Compare inside `SiteLayout`. The layout owns navbar, workspace strip, main focus target, document title and footer. Direct HTTP route entry is served by Vite's development fallback or Express's existing production fallback.
 
-| Token | Value / purpose |
-|---|---|
-| `--page` | `#0B0B0B` |
-| `--surface` / `--surface-raised` | `#141414` / `#181818` |
-| `--border` | `#343434` |
-| `--text` / `--muted` | `#F5F5F5` / `#A6A6A6` |
-| `--accent` | `#95D5B2`, selected source/regions and healthy state |
-| `--caution` / `--error` | `#E5C486` / `#EDACB3`, genuine caution/failure |
-| `--radius` / `--space` | 12px panels / 8px base spacing reference |
-| `--focus` | 2px off-white outline, 4px offset |
-| `--mono` | ui-monospace, SFMono-Regular, Menlo, Consolas, monospace |
+`WorkspaceProvider` keeps the analysis and comparison hooks mounted above route changes. Source, mode, results, selected region/diagnostic, and comparison files/results survive navigation. Refresh clears the workspace. API calls remain in `services/apiClient.js`; all benchmark values come from real API responses.
 
-System sans-serif is used for prose; mono for editorial heading, source, technical labels and numeric measurements. No remote fonts, gradients, stock imagery, glow, glass effects or decorative hero circles. Primary actions are white pills with near-black text; secondary actions use quiet outlines. Chart's leading measured bar uses mint and other regions neutral gray; all bars remain named by real region ID. There is one duration series, so no distinct measurement series were collapsed.
+Analyze owns setup and diagnostics; successful actions open Results. Results owns measurements and advice. AST owns structural exploration and compiler coverage. Samples loads actual allowlisted corpus files, selecting Clang for the DSA corpus without automatically running uploaded code. Comparison remains a separate execution-only study.
 
-## Layout
+## Automated checks
 
-Header contains wordmark, local metadata and anchor navigation to analysis/comparison. The compact two-line heading leaves the tool prominent. Source input and sample controls precede actions and a low-chrome metrics strip. Source/chart and AST/recommendations each use two columns on desktop. Hotspots retain all eight information columns and measured denominator explanations. Comparison follows the core workflow and has its own paired upload controls and raw evidence disclosure.
+- Server-rendered tests cover all routes, empty states, labeled controls, escaped output, and actual AST recommendation evidence.
+- DOM interaction tests use the real local API to load and analyze a sample, select source regions, navigate across pages, retain a completed Docker profile, retain comparison uploads, filter the corpus, and open actual DSA source.
+- Chart SVG/bar rendering is checked with test-supplied container dimensions. This is a DOM check, not viewport or visual QA.
+- HTTP tests check all route entry points, all 12 corpus source responses, unchanged eight-item academic menu, and corpus traversal rejection.
+- Original engine, HTTP, runtime, comparison, and presentation checks remain in the suite.
 
-At ≤1050px panels/metrics use tighter spacing and the sample controls stack; at ≤760px source/chart, AST/recommendations and comparison inputs stack. Metrics become two columns. Tool actions wrap their labels; file controls are constrained to container width. Source, AST and wide data tables have their own overflow regions; the page should not need horizontal scrolling. Runtime charts grow internally with region count and scroll vertically instead of squeezing labels. These are implemented CSS rules, not observed viewport results.
+## Manual preflight — not yet verified
 
-Intentional deviations from portfolio inspiration: no work history, portraits, marketing sections or copied portfolio content. Data-heavy tables retain local/enclosing explanation, timing columns and safe horizontal scrolling. Source/AST keep dedicated technical scroll panes. Warnings, diagnostics and measurement uncertainty remain visible or clearly disclosed.
+No connected browser provider was available during this redesign. Do not present the following as completed checks or attach fabricated screenshots.
 
-## Accessibility and state
-
-Preserved labeled file/sample inputs, semantic tables, region row keyboard Enter handlers, native details/summary AST toggles, source links, disabled/loading controls, role=status progress and role=alert errors. Added shared visible focus and reduced-motion CSS; source selection scroll uses immediate behavior. Chart selection has an equivalent keyboard-operable hotspot table. Timings show unavailable until measured. Compiler/runtime output remains escaped React text.
-
-Automated checks cover actual JSX markup, disabled upload controls, output escaping, real recommendation text, selected AST/source rendering, token presence and reduced-motion rules. Builds and server rendering cannot certify contrast in every rendered state, focus movement, hover tooltips or responsive geometry.
-
-## Manual acceptance still required
-
-Use 1440×900, 1024×768, 768×1024 and 390×844. Check long filenames and many regions; verify no page overflow, uncut actions/labels, readable critical columns via table scroll, file upload/drop, all samples, Analyze/Profile, AST toggles, hotspot/chart/recommendation source selection, diagnostics, comparison inputs/results and Tab/Enter focus. Do not mark these complete without a real browser run.
-
-
-## C++17 coverage presentation
-
-The compact Compiler frontend selector is owned by the existing analysis controller and sends only validated mode values through apiClient. Changing mode clears stale results. `AnalysisCoverage.jsx` displays parsing status separately from confidence/instrumentability, source-linked main-file diagnostics, skipped-region reasons and expandable STL/recurrence evidence. Hotspots show confidence and distinguish Not instrumented from Not executed. The AST caption identifies Clang normalized IR or Flex/Bison accurately. Styling reuses existing tokens; no new UI/font dependency was added.
-
-The upgrade's tests pass actual Clang stress results through server-rendered AST/coverage views and the real HTTP API client. No additional visual screenshots or live browser interactions were completed. Browser viewport acceptance remains NOT VERIFIED.
+1. Open http://127.0.0.1:5173; inspect Home at 1440, 1024, and 390 px widths.
+2. Confirm local bitmap fonts load, navbar selection matches the route, and the page has no accidental horizontal overflow.
+3. Navigate with Tab/Enter; check skip link, visible focus, selects, uploads, filters, AST disclosure controls and source-location buttons. Check back/forward navigation and direct route refresh.
+4. Load `nested.cpp`, Analyze, Profile; inspect actual summary, chart, table, program output and recommendations. Select chart bars/table rows; confirm source highlighting and AST selection remain synchronized across navigation.
+5. Open a Clang corpus sample; verify its source, diagnostics, excluded-region notes and unknown complexity cases. Test malformed source and unavailable Docker states.
+6. Navigate away during analysis/profile; confirm the workspace strip signals work and the eventual result remains available.
+7. Upload both comparison programs, navigate away/back, run comparison, and inspect raw timing metadata. Verify compile errors and mismatched output remain explicit.
+8. Check long source lines, many AST nodes and tables with horizontal overflow at narrow widths; test reduced-motion mode.
+9. Capture real Home/Analyze/Results/AST screenshots only after observing these pages in a browser.

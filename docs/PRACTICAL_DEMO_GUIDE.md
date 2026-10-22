@@ -57,3 +57,9 @@ Upload `samples/dsa/stress.cpp` (unchanged copy of `/Users/amrit/Desktop/test.cp
 For failure handling, upload a missing-header source or syntax error in Clang mode and use its diagnostic line link. For partial instrumentation, explain macro/constexpr/goto exclusions and the distinction from an unexecuted region. For academic questions, switch to Legacy and demonstrate the actual Flex/Bison grammar and its unchanged sample output.
 
 The original eight sample-menu items are retained; DSA files are uploaded from disk. This workflow is exercised at API/component level. Live browser selection/click/focus behavior still needs the manual preflight above.
+
+## Updated navigation for the multi-page UI
+
+Start at Home and choose **Begin analysis**. Load and analyze source on **Analyze**; successful analysis opens **Results**. Run Profiling from Results or return to Analyze. Inspect the AST, region index, assumptions and compiler coverage on **AST**. Use **Samples** filters to open the existing academic or DSA fixtures in Analyze; DSA samples choose Clang automatically. **About** explains the pipeline and limitations. **Compare programs** is accessible from Results and the footer. Source, results and comparison selections survive route navigation, but refresh clears them. The earlier single-page anchor directions in this guide refer to the previous UI.
+
+Browser visual preflight remains unverified; see [UI design guide](UI_DESIGN_GUIDE.md).
