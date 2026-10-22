@@ -19,7 +19,7 @@ async function baseline(source) {
   } finally { await execute('docker', ['rm','-f',name]).catch(()=>{}); await rm(dir, { recursive:true, force:true }); }
 }
 test('all sample programs really compile/run; baseline stdout matches instrumented stdout and runtime invariants', options, async () => {
-  for (const file of ['linear.cpp','nested.cpp','sequential.cpp','logarithmic.cpp','mixed_hotspots.cpp','patterns.cpp']) {
+  for (const file of ['linear.cpp','nested.cpp','sequential.cpp','logarithmic.cpp','mixed_hotspots.cpp','patterns.cpp','triple.cpp','independent.cpp']) {
     const source = await readFile(`samples/${file}`, 'utf8');
     const original = await baseline(source); assert.equal(original.compilation.exitCode, 0, original.compilation.stderr); assert.equal(original.execution.exitCode, 0);
     const r = await analyzeSource(file, source, true); assert.equal(r.profiling.status, 'completed', JSON.stringify(r.errors));
@@ -63,4 +63,15 @@ test('real missing-image failure retains static results without any runtime fabr
   const child=await execute(process.execPath,['--input-type=module','-e',script],{timeout:12000});
   assert.equal(child.code,0,child.stderr); const r=JSON.parse(child.stdout);
   assert.equal(r.success,true); assert.equal(r.profiling.status,'unavailable'); assert.equal(r.summary.worstEstimatedComplexity,'O(n^2)'); assert.equal(r.summary.totalMeasuredRuntimeMs,null); assert.ok(r.regions.every(region=>region.measurement===null));
+});
+test('concurrent real profiling jobs preserve independent outputs and region records', options, async () => {
+  const programs = ['linear.cpp','independent.cpp'];
+  const results = await Promise.all(programs.map(async file => analyzeSource(file, await readFile(`samples/${file}`, 'utf8'), true)));
+  for (let i=0;i<results.length;i++) {
+    assert.equal(results[i].profiling.status,'completed',JSON.stringify(results[i].errors));
+    assert.equal(results[i].fileName,programs[i]);
+    assert.ok(results[i].regions.every(region=>region.measurement.status==='measured'));
+  }
+  assert.match(results[0].profiling.metadata.execution.stdout,/linear: 38398852/);
+  assert.match(results[1].profiling.metadata.execution.stdout,/independent: 196632/);
 });

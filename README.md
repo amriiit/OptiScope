@@ -1,10 +1,10 @@
 # OptiScope
 
-**Compiler-Assisted Performance Hotspot Analyzer** — a working local Compiler Design Review 1 MVP. Upload a supported C++17 program, inspect a real Flex/Bison AST, and explicitly profile its loops inside a restricted Docker container. The React dashboard presents source-linked regions, structural complexity reasoning, real exclusive/inclusive durations, an AST tree, charts and deterministic recommendations.
+**Compiler-Assisted Performance Hotspot Analyzer** — a local Compiler Design prototype with an MVC web layer and modular compiler engine. Upload C++17, select Clang for semantic parsing or the independently tested Flex/Bison academic subset, and explicitly profile its loops inside a restricted Docker container. The React dashboard presents source-linked regions, structural complexity reasoning, real exclusive/inclusive durations, an AST tree, charts and deterministic recommendations.
 
 ## Install and start (Apple Silicon Mac)
 
-Prerequisites: Node.js 22.12+ or 24+, Xcode command-line tools, Homebrew, Docker Desktop with its daemon running. The analysis executable is native to your Mac; submitted programs are compiled and run only in Linux containers. The Docker image builds natively for ARM64 on Apple Silicon; no forced x86 emulation is needed.
+Prerequisites: Node.js 22.12+ or 24+, Xcode command-line tools, Homebrew, Docker Desktop with its daemon running. The academic analyzer is native to your Mac. The full C++17 Clang frontend and all uploaded-program compilation/execution run in restricted Linux containers, including during macOS development. The Dockerfile installs Clang/LLVM 14 development packages automatically; no host LibTooling installation is required. The Docker image builds natively for ARM64 on Apple Silicon; no forced x86 emulation is needed.
 
 ```bash
 cd "/Users/amrit/Desktop/OptiScore-CD Project"
@@ -30,7 +30,7 @@ npm start
 
 For Debian/Ubuntu: install `build-essential flex bison make python3` plus Node and Docker, then use the same npm commands. Python is needed **inside the Docker image**; the web app does not need host Python. Docker image rebuilding is needed after changes to `engine/`, the Makefile or `sandbox.py`.
 
-Static analysis works while Docker is stopped or the image is missing. The dashboard displays the exact unavailable condition and never manufactures runtimes. `OPTISCOPE_IMAGE` can choose another locally built compatible image; `PORT` changes the Express port (also adjust Vite's proxy for development).
+Legacy subset static analysis works while Docker is stopped or the image is missing. Full C++17 parsing requires the Clang sandbox. The dashboard displays the exact unavailable condition and never manufactures runtimes. `OPTISCOPE_IMAGE` can choose another locally built compatible image; `PORT` changes the Express port (also adjust Vite's proxy for development).
 
 ## Faculty demo: clicks and talking points
 
@@ -46,35 +46,15 @@ Do not promise identical durations or rankings between machines. Timers, Docker 
 ## Architecture and files
 
 ```text
-frontend/
-  src/components/SourceViewer.jsx  source ranges and line highlighting
-  src/components/Hotspots.jsx      region table, timings and reasoning
-  src/components/RuntimeChart.jsx  Recharts exclusive-duration chart
-  src/components/AstTree.jsx       collapsible typed AST
-  src/pages/Dashboard.jsx          uploads, API calls, samples, results
-  src/App.jsx, src/main.jsx, src/index.css
-  index.html, vite.config.js, postcss.config.js
-backend/
-  src/server.js                    loopback Express server + built UI
-  src/routes/api.js                upload validation, samples, concurrency
-  src/services/analyzer.js         jobs, engine, Docker, measurement joins
-  src/services/process.js          argument-array subprocesses and caps
-  src/services/sandbox.py          container-only compiler/program runner
-engine/
-  lexer/lexer.l                    real Flex lexer + byte/line locations
-  parser/parser.y                  Bison C++ grammar + semantic AST actions
-  include/ast.hpp                  node kinds, typed nodes, shared ownership
-  src/main.cpp                    traversals, complexity, rules, rewriting
-  Dockerfile                      Linux compiler/analysis environment
-samples/                          six complete C++17 programs
-tests/engine.test.mjs              lexer/parser/analysis/instrumentation tests
-tests/api.test.mjs                 real multipart HTTP API tests
-tests/runtime.test.mjs             real Docker compilation/execution tests
-docs/API.md                       full response contract
-docs/FILES.md                     complete created-file inventory
-docs/VALIDATION.md                actual build/test results and limitations
-Makefile, package.json, package-lock.json, .gitignore, .dockerignore
+backend/src/     models/ controllers/ routes/ services/ infrastructure/ middleware/ config/
+frontend/src/    models/ controllers/ services/ views/ components/
+engine/          lexer/ parser/ include/ src/ Dockerfile
+samples/         eight analysis demos + comparison/original.cpp and optimized.cpp
+tests/           engine, API, Docker, presentation, MVC, frontend API, views, comparison
+docs/            locked specifications, architecture, walkthrough, demo and validation
 ```
+
+See [MVC architecture](docs/MVC_ARCHITECTURE.md), [code walkthrough](docs/CODE_WALKTHROUGH.md), [file/change inventory](docs/FILES.md), [practical guide](docs/PRACTICAL_DEMO_GUIDE.md), [UI design guide](docs/UI_DESIGN_GUIDE.md) and [implementation status](docs/IMPLEMENTATION_STATUS.md).
 
 `npm run dev` runs frontend/backend together. `npm run build` builds the native analysis engine and Vite frontend. `npm test` builds the engine and tests static analysis/API; real runtime tests run if the Docker image is available, otherwise they are explicitly skipped and Docker-unavailable behavior is tested. **`npm run test:runtime` requires Docker and refuses to skip it.**
 
@@ -84,7 +64,7 @@ Loop IDs are assigned in preorder and shared by AST JSON, static regions, instru
 
 The sandbox compiles actual code, executes it, captures stdout/stderr and reads a dedicated profiling file. `std::chrono::steady_clock` measures region scopes and `main()` separately. A single-threaded timer stack subtracts children's inclusive time to compute exclusive time. Repeated loop-scope entries aggregate by region ID. Recommendations and source regions are joined to measurements without estimating/filling missing runtimes.
 
-## Supported C++ subset
+## Legacy Flex/Bison C++ subset
 
 - Function definitions with `int`, `double`, `bool`, `void` return types; simple typed scalar parameters; empty parameter list for `main()`.
 - Local scalar declarations with optional initializer; one declarator per statement. Basic one-dimensional local arrays (`int values[180];`) and array indexing.
@@ -129,4 +109,38 @@ Timers count an entire loop scope, including condition/update and body. `calls` 
 
 Instrumentation costs are significant for tiny or frequently entered regions. The UI flags aggregate exclusive times below 0.1 ms or average exclusive time below 1 µs, and always warns about overhead. A single O0 run cannot establish production performance or a guaranteed optimization speedup. General recommendation absence on tiny programs is intentional.
 
-Next phase: conservative type checking and dataflow, richer loop recurrences, triangular bounds, bounded call graphs, a proven sorting-pattern detector, more syntax, calibrated multi-run benchmarks/input families, and further sandbox hardening. These are not claimed as implemented MVP features.
+Remaining analysis work: alias/dataflow proofs, general recurrence solving and bounded call graphs, more dependent-bound models, sorting-pattern recommendations, controlled workload families and further benchmark hardening. Clang parses broad C++17 syntax; that does not imply complete complexity inference.
+
+
+## Before/after comparison
+
+In the Compare section, select `samples/comparison/original.cpp` and `samples/comparison/optimized.cpp`, then **Compare in Docker**. The original scans an array for each query; the optimized version builds a bounded frequency lookup and preserves the demo's hit count. Both use the same fixed internal query workload.
+
+This is explicitly **execution-only**: no Flex/Bison analysis of either comparison upload is claimed. Both uninstrumented executables compile with `-std=c++17 -O2`. One warm-up per version precedes ten measured runs in alternating AB/BA order. Every run must exit zero and agree in stdout/stderr; mismatches and failures receive no speedup claim. Results include raw process wall times, mean/median/min/max/standard deviation, source hashes, compiler/platform/image metadata and short/noisy-run warnings. Processes are measured including startup and capture overhead.
+
+The run count is fixed, stdin/fixture upload is unavailable, and matching output for one fixed workload is not a universal equivalence proof. Only one study is supplied; report export and full V3 completion remain future work. See [known limitations](docs/KNOWN_LIMITATIONS.md).
+
+Previous MVC baseline: **57 passed, 0 failed, 0 skipped**, including Docker-required tests and all eight demos. **Browser visual/click/viewport QA is NOT VERIFIED** because no browser provider was connected and native Chrome permissions were pending. No reference image was available; styling follows the prompt's explicit monochrome specification. The five locked SOT files and six original samples remain unchanged.
+
+
+## C++17 frontend upgrade
+
+The **Compiler frontend** selector supports:
+
+- **Auto** (default): preserve the academic parser's established results when it accepts a source; otherwise try sandboxed Clang. A legacy parse is structural, not a complete semantic check.
+- **Clang**: use real Clang 14 LibTooling C++17 syntax/semantic analysis in Docker. Select this for DSA programs and authoritative compiler diagnostics.
+- **Legacy**: only the original Flex/Bison academic subset; retains offline static analysis and unchanged golden outputs.
+
+This upgrade is explicitly authorized by the current project-owner request. Flex/Bison is preserved, and the five locked specifications remain unchanged. Both C++ frontends return the shared typed IR and reuse the same region, cost, recommendation, instrumentation and serialization modules. No textual/JSON AST dump parsing or regex C++ parser is used.
+
+Clang supports installed standard headers, namespaces/using, primitive types, pointers/references, classes/constructors/methods, overloads, templates, `auto`, range-for, structured bindings, lambdas, recursion, macros, break/continue, switch and exceptions. All requested standard container declarations are covered by the realistic corpus. Additional third-party headers and multifile builds are not installed automatically.
+
+`engine/src/stl_costs.cpp` recognizes actual resolved standard-container types and conservative operation bounds. Clang regions add `exact_pattern`, `estimated` or `unknown` confidence. Canonical named/product/logarithmic loops, independent nests, sequential dominance and a narrow triangular upper envelope are supported. Range iteration requires known standard-container/array semantics and safe binding/effects. General graph, memoization and branching-recursion complexity stays Unknown; a narrow guarded integer `f(n-1)` recurrence has a separately labeled standalone O(n) estimate, never silently propagated into callers.
+
+Macro-boundary, constexpr and goto/labelled function loops remain visible but are excluded from rewriting. All safe loop scopes use the existing nested RAII timers; profiling is single-threaded and requires normal zero-exit completion. Parsing success, inference coverage and instrumentation support are displayed separately, with source-linked diagnostics and skipped-region reasons.
+
+The DSA corpus lives in `samples/dsa/`: arrays/Kadane/prefix sums, bubble/merge/STL sort and binary search, strings/two pointers/window, linked lists, monotonic stack/queue, trees/BST, BFS/DFS/Dijkstra/topological sort, union-find, memoized/tabulated Fibonacci/LCS/grid/knapsack, subsets/permutations/factorial, modern syntax/containers and the copied 18-benchmark workspace stress program. Upload these fixtures through the file input; the original eight-item academic sample menu is unchanged.
+
+Rebuild after upgrading: `npm run build && npm run sandbox:build`. Then run `npm run test:runtime`. See [current validation](docs/VALIDATION.md), [architecture](docs/MVC_ARCHITECTURE.md), [API](docs/API.md) and [limitations](docs/KNOWN_LIMITATIONS.md). Browser interaction/visual QA remains unverified; real frontend API binding and server-rendered Clang AST/coverage views are tested.
+
+Current C++17 upgrade validation: **92 passed, 0 failed, 0 skipped**, including all original 57 tests and real Docker. Both macOS native/web builds and Linux LibTooling builds passed. The stress program has 39 source callables and 35 loop regions; its deterministic output is preserved under instrumentation. See the recorded logs in `docs/evidence/cpp17-*.txt`.

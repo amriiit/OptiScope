@@ -1,0 +1,265 @@
+{
+  "compilations": {
+    "original": {
+      "status": "completed",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "optimized": {
+      "status": "completed",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "runs": {
+    "original": [
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 31.625541
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 27.892875
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 14.707542
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 13.209792
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 15.86675
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 20.881875
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 14.338875
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 13.3245
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 14.005833
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 15.153833
+      }
+    ],
+    "optimized": [
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 2.531541
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 2.1345
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 9.02675
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 2.345709
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 1.446875
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 1.830584
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 1.535542
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 1.002375
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 4.328042
+      },
+      {
+        "status": "completed",
+        "exitCode": 0,
+        "stdout": "hits: 33600\n",
+        "stderr": "",
+        "elapsedMs": 1.160041
+      }
+    ]
+  },
+  "warmups": {
+    "original": {
+      "status": "completed",
+      "exitCode": 0,
+      "stdout": "hits: 33600\n",
+      "stderr": "",
+      "elapsedMs": 29.282583
+    },
+    "optimized": {
+      "status": "completed",
+      "exitCode": 0,
+      "stdout": "hits: 33600\n",
+      "stderr": "",
+      "elapsedMs": 4.519958
+    }
+  },
+  "environment": {
+    "platform": "Linux-7.0.12-linuxkit-aarch64-with-glibc2.36",
+    "architecture": "aarch64",
+    "compiler": "g++ (Debian 12.2.0-14+deb12u1) 12.2.0",
+    "kernel": "7.0.12-linuxkit",
+    "cpu": "not exposed by container"
+  },
+  "runCount": 10,
+  "warmupCount": 1,
+  "flags": [
+    "-std=c++17",
+    "-O2"
+  ],
+  "workload": "Fixed internal inputs; no stdin; same container limits; single-threaded deterministic programs only.",
+  "equivalent": true,
+  "status": "completed",
+  "speedup": 7.53108256975136,
+  "runtimeReductionPercent": 86.72169650593786,
+  "statistics": {
+    "original": {
+      "timingsMs": [
+        31.625541,
+        27.892875,
+        14.707542,
+        13.209792,
+        15.86675,
+        20.881875,
+        14.338875,
+        13.3245,
+        14.005833,
+        15.153833
+      ],
+      "runCount": 10,
+      "meanMs": 18.1007416,
+      "medianMs": 14.930687500000001,
+      "minMs": 13.209792,
+      "maxMs": 31.625541,
+      "standardDeviationMs": 6.240058967535133
+    },
+    "optimized": {
+      "timingsMs": [
+        2.531541,
+        2.1345,
+        9.02675,
+        2.345709,
+        1.446875,
+        1.830584,
+        1.535542,
+        1.002375,
+        4.328042,
+        1.160041
+      ],
+      "runCount": 10,
+      "meanMs": 2.7341959,
+      "medianMs": 1.982542,
+      "minMs": 1.002375,
+      "maxMs": 9.02675,
+      "standardDeviationMs": 2.2820135135579043
+    }
+  },
+  "analysisMode": "execution_only",
+  "warnings": [
+    "No Flex/Bison analysis is performed in comparison mode. Equality is checked only for these fixed internal inputs, stdout, stderr and exit status; filesystem effects and universal equivalence are not verified.",
+    "Uninstrumented -O2 process wall times include startup and capture overhead. Shared Docker hardware is noisy; a single session does not establish a reproducible improvement.",
+    "Short execution: process startup and timing overhead can dominate. Increase the workload before interpreting the ratio.",
+    "High variation: repeat this experiment with a longer workload and idle machine."
+  ],
+  "metadata": {
+    "image": "optiscope-sandbox:local",
+    "imageId": "sha256:e14b8f80d8bfe7e5d30bcabc5cc6f8477af3731a8a9b5a3c44c3e1d7dad77f3c",
+    "timestamp": "2026-10-22T18:34:04.328Z",
+    "files": {
+      "original": {
+        "fileName": "original.cpp",
+        "sha256": "de669b3f07c01402d8850f6bec2d4d4330e7e5a8f64e59499269c14ce0c36d61"
+      },
+      "optimized": {
+        "fileName": "optimized.cpp",
+        "sha256": "cf23a367b87b1dab46ae5da17408d524ac81ef8486c2f389080b9b5ee4adca11"
+      }
+    },
+    "order": "Alternating AB/BA; 1 warm-up per version, then 10 measured runs per version",
+    "timeoutSeconds": 2,
+    "totalBenchmarkBudgetSeconds": 25,
+    "compileTimeoutSeconds": 20,
+    "isolation": "non-root; network none; 256 MiB; 1 CPU; 64 PIDs; read-only root and inputs"
+  }
+}

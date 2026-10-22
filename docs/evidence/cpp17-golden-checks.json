@@ -1,0 +1,46 @@
+{
+  "logarithmic.cpp": {
+    "canonicalAnalysisSha256": "79b3218c1541142305edec606ca3b71b039e1514e16febb9b44b22bef7228575",
+    "unchanged": true,
+    "sourceSha256": "c4966441fc91f531935328492b3ef65bbadad9b2e8a965d6704d7ad526d22992"
+  },
+  "linear.cpp": {
+    "canonicalAnalysisSha256": "2053f915b34ead4d07e7c789601660b7e371d8c1e2a94620a15dbf3e8214240a",
+    "unchanged": true,
+    "sourceSha256": "6cafd71a366874f9b3881e1358fc5d6b2462f65749889d7fb58f75b9f848e3ff"
+  },
+  "mixed_hotspots.cpp": {
+    "canonicalAnalysisSha256": "300135af6500003c7db5f7bda50533d26129aab7f8f0786917de29178adf30ab",
+    "unchanged": true,
+    "sourceSha256": "744a73bbfcac500c5307fcc22a80222086d950b715ee40d63e40d6d19ab078fb"
+  },
+  "sequential.cpp": {
+    "canonicalAnalysisSha256": "484b7f79b0c4243e92e3e06f987a50083e5c417d3736b7187beb81c18c0436ff",
+    "unchanged": true,
+    "sourceSha256": "3e35f497a54c88074f0e00485e48eff653698f8a7b56ab8d7937fcbebba559de"
+  },
+  "patterns.cpp": {
+    "canonicalAnalysisSha256": "c8cc2bff137d960a15106011eae718fee64b7f7f4008276735459969f8d6df4f",
+    "unchanged": true,
+    "sourceSha256": "d6bcae1faea8351e3b979b573cf1c97815b2938a0287015387898ccbe1a17eb6"
+  },
+  "triple.cpp": {
+    "canonicalAnalysisSha256": "05f6bfe84733f85b7511da4ec2474bddbd5ad6c8273ad3dbb1f5000927c6a57a",
+    "unchanged": true,
+    "sourceSha256": "bafa621294883002edea17509940fbd2d1603a54031566b57417ac4b43078f38"
+  },
+  "independent.cpp": {
+    "canonicalAnalysisSha256": "acb838bbcdd315f5fac0594a2b799065dfdba3e391b335a0f402e58ee3b5a10e",
+    "unchanged": true,
+    "sourceSha256": "560a16c0e3b55653b423fb5f9b060b4977f71778edf9f46eb526c2fc2db84e01"
+  },
+  "nested.cpp": {
+    "canonicalAnalysisSha256": "bc97976a7c875d8da5fe22543243d027018a1ec7de1859936de90423a8c8ea11",
+    "unchanged": true,
+    "sourceSha256": "9ee1e24c29419d0750d68df940d820bf73ddff236255acdcaed7f85828e925ef"
+  },
+  "stressSource": {
+    "sha256": "69b225af2a31effef895f67e3a4f84be8b59c4e80177712175d143eff2c7709c",
+    "matchesWorkspaceOriginal": true
+  }
+}

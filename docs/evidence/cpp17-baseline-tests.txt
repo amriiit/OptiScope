@@ -1,0 +1,78 @@
+
+> optiscope@1.0.0 test:runtime
+> make engine && REQUIRE_DOCKER=1 node --test tests/*.test.mjs
+
+make: Nothing to be done for `engine'.
+✔ API analyzes actual uploaded file with complete contract and no fabricated times (133.341208ms)
+✔ API serves real samples and rejects traversal, wrong extension, oversized and invalid uploads (53.68725ms)
+✔ absent main is static-only even when profiling requested (1349.925458ms)
+✔ POST /profile completes the actual multipart-upload Docker pipeline for acceptance samples (5560.075625ms)
+✔ runtime subset rejects unknown external calls without executing them (20.920333ms)
+✔ benchmark statistics compute even/odd medians, mean, spread without mutating input (0.735584ms)
+✔ benchmark ratios are gated and correctly represent regressions (0.123291ms)
+✔ benchmark warns about short durations and noisy observations (0.080666ms)
+✔ real Docker comparison validates demo output with 10 uninstrumented runs and metadata (1681.160292ms)
+✔ real Docker rejects changed output and suppresses improvement claims (557.195958ms)
+✔ real Docker comparison reports compile errors, nonzero exits and timeout (3118.085583ms)
+✔ comparison HTTP upload contract and equivalence are real (641.252625ms)
+✔ all sample ASTs, structural estimates, region ranges and stable IDs (67.0735ms)
+✔ Flex tokens and typed AST: calls, arrays, booleans, unary, compound assignment, if/else and while (5.876833ms)
+✔ reject unsupported syntax, macros, keywords and malformed constructs (33.168416ms)
+✔ complexity: fixed bounds, constant steps, mutation, dependent bounds, unknown calls and conditional loops (68.523375ms)
+✔ source byte offsets respect UTF-8 comments; nested and shared-end edits are ordered right to left (8.9505ms)
+✔ deterministic AST recommendation evidence and conservative suppression (36.981708ms)
+✔ scoped symbol table resolves parameters and local scopes; no main remains static-only (35.648958ms)
+✔ added cubic and independently authored mixed-family fixtures are parsed from content (18.551917ms)
+✔ frontend API client loads and analyzes all eight real samples over HTTP (1954.762875ms)
+✔ region model rejects ambiguous IDs and invalid original-source spans (0.25025ms)
+✔ comparison frontend rejects successful envelopes without evidence (0.068792ms)
+✔ analysis envelopes allocate independent mutable collections (1.337084ms)
+✔ upload model validates UTF-8 and strips supplied path (0.472542ms)
+✔ upload model rejects NUL and empty source (0.092209ms)
+✔ frontend source model validates actual file bytes and extension (0.402667ms)
+✔ frontend source model enforces 128 KiB bound (0.238917ms)
+✔ profile model accepts nested inclusive durations without summing them (0.189959ms)
+✔ profile model rejects duplicate (0.071042ms)
+✔ profile model rejects foreign ID (0.032959ms)
+✔ profile model rejects exclusive exceeds inclusive (0.042125ms)
+✔ profile model rejects unsafe integer (0.263208ms)
+✔ profile model rejects zero invocations (0.158042ms)
+✔ profile model rejects malformed total (0.1795ms)
+✔ hotspots use main denominator, exclusive rank and unexecuted absence (0.480208ms)
+✔ hotspot service rejects sum of exclusive times over main duration (0.139792ms)
+✔ two-slot job limiter releases capacity after rejected work (0.338792ms)
+✔ workspaces isolate input and clean all files (19.202416ms)
+✔ process infrastructure bounds trusted subprocess duration (56.953333ms)
+✔ process infrastructure bounds output and never interprets shell characters (131.392167ms)
+✔ frontend analysis model preserves actual data and unavailable measurements (0.409709ms)
+✔ local and enclosing complexity reuse real AST estimates; sequential siblings remain O(n) (237.245417ms)
+✔ invocation display uses only profiler records and distinguishes unavailable/unexecuted from counts (59.201959ms)
+✔ AST opens program/function/body branches, retains source lines and marks selected loop (13.474208ms)
+✔ source highlight still uses selected region lines (8.600292ms)
+linear.cpp: linear: 38398852 | main 2.633 ms; top R1
+nested.cpp: nested: 69103152 | main 2.968 ms; top R2
+sequential.cpp: sequential: 58098494 | main 2.862 ms; top R1
+logarithmic.cpp: logarithmic: 3048567 | main 0.014 ms; top R1
+mixed_hotspots.cpp: mixed: 325379525 | main 16.327 ms; top R5
+patterns.cpp: patterns: 2610 | main 0.108 ms; top R3
+triple.cpp: triple: 109915 | main 0.126 ms; top R3
+independent.cpp: independent: 196632 | main 0.229 ms; top R1
+✔ all sample programs really compile/run; baseline stdout matches instrumented stdout and runtime invariants (7660.3855ms)
+✔ nested unbraced loops, dangling else and early returns retain observable semantics (1096.329042ms)
+✔ compile errors, runtime failure, timeouts, output caps, and unexecuted regions are honest (7239.107333ms)
+✔ missing Docker or image preserves static data without measurements (0.213833ms)
+✔ real missing-image failure retains static results without any runtime fabrication (155.367917ms)
+✔ concurrent real profiling jobs preserve independent outputs and region records (522.483333ms)
+✔ workbench initial view exposes real actions, comparison inputs and unavailable timing placeholders (549.593667ms)
+✔ upload view has labeled input, sample selection and disabled processing controls (10.820459ms)
+✔ output view preserves actual exit code, stdout and stderr with HTML escaping (0.503ms)
+✔ recommendation view renders actual AST rule evidence, caveats and region source links (4.756292ms)
+✔ monochrome tokens define responsive and reduced-motion rules without remote fonts or gradients (3.819958ms)
+ℹ tests 57
+ℹ suites 0
+ℹ pass 57
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17400.860041

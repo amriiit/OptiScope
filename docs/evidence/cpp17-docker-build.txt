@@ -1,0 +1,59 @@
+
+> optiscope@1.0.0 sandbox:build
+> docker build -f engine/Dockerfile -t optiscope-sandbox:local .
+
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 534B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/debian:bookworm-slim
+#2 DONE 1.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 96B done
+#3 DONE 0.0s
+
+#4 [1/8] FROM docker.io/library/debian:bookworm-slim@sha256:7ff6ba31527b9e336162fa061746c366c4b2032f4d2cff2078bea43f78efe3f8
+#4 resolve docker.io/library/debian:bookworm-slim@sha256:7ff6ba31527b9e336162fa061746c366c4b2032f4d2cff2078bea43f78efe3f8 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 7.32kB done
+#5 DONE 0.0s
+
+#6 [2/8] RUN apt-get update && apt-get install -y --no-install-recommends g++ python3 flex bison make clang-14 llvm-14-dev libclang-14-dev && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [3/8] WORKDIR /opt/optiscope
+#7 CACHED
+
+#8 [4/8] COPY engine /opt/optiscope/engine
+#8 DONE 0.0s
+
+#9 [5/8] COPY Makefile /opt/optiscope/Makefile
+#9 DONE 0.0s
+
+#10 [6/8] RUN make engine && make clang-engine
+#10 0.086 bison -Wall -d --defines=engine/build/parser.hpp -o engine/build/parser.cpp engine/parser/parser.y
+#10 0.139 flex -o engine/build/lexer.cpp engine/lexer/lexer.l
+#10 0.143 g++ -std=c++17 -O2 -Wall -Wextra -Iengine/include -Iengine/build engine/build/parser.cpp engine/build/lexer.cpp engine/src/complexity.cpp engine/src/instrumenter.cpp engine/src/legacy_frontend.cpp engine/src/main.cpp engine/src/profiler.cpp engine/src/recommendations.cpp engine/src/recurrences.cpp engine/src/regions.cpp engine/src/serialization.cpp engine/src/stl_costs.cpp engine/src/traversal.cpp -o engine/build/optiscope
+#10 6.716 clang++-14 -std=c++17 -O1 -Wall -Wextra -Iengine/include -isystem `llvm-config-14 --includedir` engine/src/complexity.cpp engine/src/instrumenter.cpp engine/src/profiler.cpp engine/src/recommendations.cpp engine/src/recurrences.cpp engine/src/regions.cpp engine/src/serialization.cpp engine/src/stl_costs.cpp engine/src/traversal.cpp engine/clang/frontend.cpp engine/clang/main.cpp -L`llvm-config-14 --libdir` -l:libclang-cpp.so.14 `llvm-config-14 --libs --system-libs` -o engine/build/optiscope-clang
+#10 DONE 15.2s
+
+#11 [7/8] COPY backend/src/services/sandbox.py /opt/optiscope/sandbox.py
+#11 DONE 0.0s
+
+#12 [8/8] WORKDIR /work
+#12 DONE 0.0s
+
+#13 exporting to image
+#13 exporting layers 0.0s done
+#13 exporting manifest sha256:9eb0b79cc2e04aab9325a192984244c14b99f2ea7083841c46aca1f32e8b4780 done
+#13 exporting config sha256:f691f2a1445fe6cd1cf3e3b3d8332c9f840d8974667ffbb23cdbc7f25585d568 done
+#13 exporting attestation manifest sha256:84c1dda764f4546516cdb48c49e5f4ef3c9a86cfe8b7a4ebaa38b7457ef69b12 done
+#13 exporting manifest list sha256:b47f896b269bc2772962a759c4a218b423f131278c50267ccd5a80f5e135a8a7 done
+#13 naming to docker.io/library/optiscope-sandbox:local done
+#13 unpacking to docker.io/library/optiscope-sandbox:local 0.0s done
+#13 DONE 0.1s

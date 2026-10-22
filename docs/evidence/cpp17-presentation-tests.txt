@@ -1,0 +1,17 @@
+✔ local and enclosing complexity reuse real AST estimates; sequential siblings remain O(n) (59.756ms)
+✔ invocation display uses only profiler records and distinguishes unavailable/unexecuted from counts (13.630917ms)
+✔ AST opens program/function/body branches, retains source lines and marks selected loop (6.355792ms)
+✔ source highlight still uses selected region lines (3.272542ms)
+✔ workbench initial view exposes real actions, comparison inputs and unavailable timing placeholders (223.059458ms)
+✔ upload view has labeled input, sample selection and disabled processing controls (11.436375ms)
+✔ output view preserves actual exit code, stdout and stderr with HTML escaping (0.415709ms)
+✔ recommendation view renders actual AST rule evidence, caveats and region source links (8.363292ms)
+✔ monochrome tokens define responsive and reduced-motion rules without remote fonts or gradients (3.975ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 305.313
