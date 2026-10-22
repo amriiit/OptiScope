@@ -20,70 +20,70 @@
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 13.170208
+        "elapsedMs": 17.635916
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.164125
+        "elapsedMs": 16.087291
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.689125
+        "elapsedMs": 16.92775
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 16.249042
+        "elapsedMs": 17.16475
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 13.731334
+        "elapsedMs": 16.791708
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 20.17375
+        "elapsedMs": 22.465
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.706083
+        "elapsedMs": 14.884208
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 15.566583
+        "elapsedMs": 15.571667
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 12.002333
+        "elapsedMs": 18.551458
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 14.441917
+        "elapsedMs": 18.568667
       }
     ],
     "optimized": [
@@ -92,70 +92,70 @@
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.675416
+        "elapsedMs": 0.516708
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.022416
+        "elapsedMs": 13.402458
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 0.626959
+        "elapsedMs": 2.572958
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 0.609709
+        "elapsedMs": 0.985375
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.625166
+        "elapsedMs": 0.969791
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 0.811959
+        "elapsedMs": 0.811542
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.373875
+        "elapsedMs": 0.682708
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 0.740125
+        "elapsedMs": 1.087375
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.0055
+        "elapsedMs": 0.877459
       },
       {
         "status": "completed",
         "exitCode": 0,
         "stdout": "hits: 33600\n",
         "stderr": "",
-        "elapsedMs": 1.869084
+        "elapsedMs": 2.114125
       }
     ]
   },
@@ -165,14 +165,14 @@
       "exitCode": 0,
       "stdout": "hits: 33600\n",
       "stderr": "",
-      "elapsedMs": 11.492084
+      "elapsedMs": 19.345709
     },
     "optimized": {
       "status": "completed",
       "exitCode": 0,
       "stdout": "hits: 33600\n",
       "stderr": "",
-      "elapsedMs": 0.443917
+      "elapsedMs": 0.537458
     }
   },
   "environment": {
@@ -191,48 +191,48 @@
   "workload": "Fixed internal inputs; no stdin; same container limits; single-threaded deterministic programs only.",
   "equivalent": true,
   "status": "completed",
-  "speedup": 14.36501413273528,
-  "runtimeReductionPercent": 93.03864242137304,
+  "speedup": 17.437138329942318,
+  "runtimeReductionPercent": 94.26511402801204,
   "statistics": {
     "original": {
       "timingsMs": [
-        13.170208,
-        14.164125,
-        14.689125,
-        16.249042,
-        13.731334,
-        20.17375,
-        14.706083,
-        15.566583,
-        12.002333,
-        14.441917
+        17.635916,
+        16.087291,
+        16.92775,
+        17.16475,
+        16.791708,
+        22.465,
+        14.884208,
+        15.571667,
+        18.551458,
+        18.568667
       ],
       "runCount": 10,
-      "meanMs": 14.88945,
-      "medianMs": 14.565521,
-      "minMs": 12.002333,
-      "maxMs": 20.17375,
-      "standardDeviationMs": 2.0895796705531464
+      "meanMs": 17.4648415,
+      "medianMs": 17.04625,
+      "minMs": 14.884208,
+      "maxMs": 22.465,
+      "standardDeviationMs": 2.010051563706377
     },
     "optimized": {
       "timingsMs": [
-        1.675416,
-        1.022416,
-        0.626959,
-        0.609709,
-        1.625166,
-        0.811959,
-        1.373875,
-        0.740125,
-        1.0055,
-        1.869084
+        0.516708,
+        13.402458,
+        2.572958,
+        0.985375,
+        0.969791,
+        0.811542,
+        0.682708,
+        1.087375,
+        0.877459,
+        2.114125
       ],
       "runCount": 10,
-      "meanMs": 1.1360209000000001,
-      "medianMs": 1.0139580000000001,
-      "minMs": 0.609709,
-      "maxMs": 1.869084,
-      "standardDeviationMs": 0.4418150943153595
+      "meanMs": 2.4020499,
+      "medianMs": 0.977583,
+      "minMs": 0.516708,
+      "maxMs": 13.402458,
+      "standardDeviationMs": 3.718501520184668
     }
   },
   "analysisMode": "execution_only",
@@ -244,8 +244,8 @@
   ],
   "metadata": {
     "image": "optiscope-sandbox:local",
-    "imageId": "sha256:e14b8f80d8bfe7e5d30bcabc5cc6f8477af3731a8a9b5a3c44c3e1d7dad77f3c",
-    "timestamp": "2026-10-22T18:52:18.379Z",
+    "imageId": "sha256:f05f9abce4f2ed4f340bb9daecd6165dc1ea06c3e01479018db50d80e5ec15c9",
+    "timestamp": "2026-10-22T19:06:34.397Z",
     "files": {
       "original": {
         "fileName": "original.cpp",
